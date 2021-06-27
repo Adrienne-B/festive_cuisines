@@ -1,0 +1,801 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+/* General Styles */
+ 
+html {
+  font-size: 16px;
+}
+ 
+body {
+  font-size: 1em;
+  font-family: 'Domine', serif;
+  font-family: 'Cormorant SC', serif;	
+  color: #e2e3ed;
+  text-align: left;
+}
+html, body {
+  margin:0;
+  padding:0;
+  overflow-x:hidden;	
+	/*prevents white space from the right side*/
+}
+ul, 
+ol {
+  list-style-type: none;
+}
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+h1{
+  color: white;
+  font-family: 'DM Serif Display', serif;
+}
+h2 {
+  color: darkorange;
+  font-family: 'DM Serif Display', serif;
+  font-weight: 500;
+  font-size: 1.875em;
+}
+ 
+h3, 
+h4 {
+  font-family: 'Cormorant SC', serif;	
+  font-weight: 500;
+  font-size: 1.125em;
+  margin: 20px 0;
+}
+h4{
+	color: darkorange;
+	/*This is for the contact title for the footer*/
+}
+img {
+ width: 100%;
+}
+ 
+figure {
+ margin: 0;
+}
+address {
+ font-style: normal;
+}
+
+/* -------------------- Base Header - Footer Styles -------------------- */
+
+header,
+footer {
+  align-items: center;	
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+header {
+  padding: 15px 0; /*makes the height of the header longer*/
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
+		
+}
+
+header figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 60%;
+}
+
+.header-divider {
+  background: #3a3a3a; 
+  height: 1px;
+  width: 100%;
+  margin: 10px 0 20px 0;
+}
+
+header nav {
+  font-size: 1.125em;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: space-around;	
+  text-transform: uppercase;
+  width: 60%; /*Made the links have space.*/	
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;	
+}
+
+header nav ul li {
+  font-size: 1.125em;
+}
+
+footer {
+  flex-direction: column;	
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .content-wrapper {
+  margin: 50px 0;	
+  width: 55%;
+}
+
+footer .contact {
+  margin-bottom: 50px;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  /*background-color: #e67e22;
+  border-radius: 50%;* took out the solid orange from the social media icons*/
+	
+  border: 1px solid #FF6500;
+  border-radius: 200px;
+  color: darkorange;	
+	
+  align-items: center;
+  display: flex;
+  justify-content: center;	
+  width: 40px;
+  height: 40px;	
+					/*margin-right: 2em;*/
+}
+
+footer .social-icons p i {
+  font-size: 1.3125em;
+	
+}
+footer .copyright {
+  margin: 20px 0;
+}
+
+header li:hover,
+header li:active{
+    background-color: #527158;
+}
+
+				/* -------------------- Mobile Styles - Homepage -------------------- */ 
+
+
+
+.hero-area .container {
+	background-image: url("img/cover.png");
+	background-repeat: no-repeat;
+	background-position: center;	
+	background-size: cover;
+	min-height: 490px;
+	/*padding-top: 58px;* I had a white space b/w the nav and picture. so I had this, but now with the min-height it makes the picture show its entirty and closes the white gap*/
+
+  	display: flex;
+  	justify-content: center;
+  	flex-flow: row wrap;	
+}
+.overlay h1{
+	color: white;
+	font-family: 'DM Serif Display', serif;
+	font-size: 2em;
+	margin-top: 74px;
+	text-align: center;
+}
+.overlay{
+	background: rgba(0, 0, 0, 0.5);
+	background-size: 100px;
+	position: absolute;
+	/*top: 43;
+	left: 0;*/
+	min-height: 490px;
+	width: 100%;
+	
+}
+
+.btn {
+	display: inline-block;
+	font-weidght: 300px;
+	margin: 10px;
+	padding: 10px 30px;
+	text-decoration: none;
+
+	/*padding is the hight or how big something will be such as - the buttons height*/
+	/*the margins help put a space between the two buttons*/
+}
+.btn-full{
+	background-color: #e67e22;
+	border-radius: 200px;
+	color: #fff;
+	display: inline-block;
+	
+}
+
+ .btn-ghost{
+	border: 1px solid #FF6500;
+	border-radius: 200px;
+	color: darkorange;
+	left: 35%;
+}
+.btn:hover,
+.btn:active{
+    background-color: #EB4600;
+}
+/*border-radius means making the button or a shape rounder around the edges
+btn-ghost means see throught button: example- second button*/
+
+
+.btn-full, .btn-ghost {
+	margin-left: 30px;
+	margin-top: 34px;
+}
+.overlay .hero-area-p {
+	color: white;
+	font-family: 'Mate SC', serif;
+	font-style: italic;
+	font-size: 1.3em;
+	line-height: 1.2em;
+	margin-top: 34px;
+	margin-left: 45px;
+	text-align: center;
+	word-wrap: break-word;
+	width: 78%;
+}
+.entrees_section {
+	display: flex;
+  	justify-content: center;
+  	flex-flow: row wrap;
+}
+
+
+
+/*ENTREES SECTION*/
+.container-wrapper,  u, h2{
+	color: darkorange;
+	font-family: 'DM Serif Display', serif;
+	font-style: italic;
+	padding-top: -13px;
+	text-align: center;
+	width: 90%;
+  	margin: 30px 20px;
+	
+}
+.container-wrapper p{
+	color: black;
+	margin-left: 30px;
+	margin-top: 13px;
+	word-wrap: break-word;
+	text-align: center;
+	width: 87%;
+}
+.main_group article h3 {
+	color:  black;
+	font-family: 'Viaoda Libre', cursive;
+	font-size: 1.5em;
+	text-align: center;
+	/*text-decoration: underline;*/
+}
+.main_group article p{
+	color: dimgrey;
+	margin-bottom: 45px;
+	margin-left: 30px;
+	word-wrap: break-word;
+	text-align: center;
+	width: 87%;
+
+}
+
+
+
+/*APPETIZER SECTION*/
+
+.appetizer {
+	background-image: url("img/appetizer.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 199px;
+	width: 100%;
+}
+.appetizer .wrapper h2 {
+	color: white;
+}
+.appetizer  .wrapper p {
+	color: white;
+	line-height: 15px;
+	text-align: center;
+	
+}
+.appetizer .overlay {
+	height: 14px;
+	max-width: 100%;
+}
+/*.here-text-box article p {
+	font-size: 2.5em;
+	line-height: 25px;*/
+.second_group h2 {
+	font-size: 1.5em;
+	text-align: center;
+	text-decoration: underline;
+}
+.second_group h3{
+	color: black;
+	font-family: 'Viaoda Libre', cursive;
+	font-size: 1.5em;
+	text-align: center;
+}
+.second_group p {
+	color: dimgrey;
+	font-family: 'DM Serif Display', serif;
+	font-style: italic;
+	margin-bottom: 45px;
+	padding-left: 55px;
+	text-align: center;
+	word-break: break-all;
+	width: 72%;
+}
+
+/*DESSERT SECTION*/
+
+
+
+
+/* ==========================================================================
+  Contact Page
+   ========================================================================== */
+
+	/*
+.container, .img{
+	top: 2px;
+	left: auto;*/
+	
+	
+	
+	
+	/*having auto for top and left allow the top image to be perfectly center between the navigation bar and footer bar*/
+/*	
+position: absolute;
+	width: 80%;
+	 padding-left: 55px;
+	  margin-top: 123px;
+	
+	
+}
+.border{
+	background-color: white;
+	margin-top: 90px;
+	padding-bottom: 74px;
+	padding-top: 8px;
+}
+.contact-page .border{
+	position: relative;
+	width: 70%;
+	height: 540px;
+	margin-left: 35px;
+	padding-top: 45px;
+	background: white;
+	padding: 40px;
+	top: 85px;
+	
+	/*Another to move an element up, down, left, you need position relative*/
+	/*top means breinging an element downwards*/
+
+
+.contact_page {
+	background: url("img/background2 - Copy.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 2px;
+	padding-bottom: 95px;
+}
+.border-wrapper{
+	background: white;
+	padding-bottom: 88px;
+	margin-left: 54px;
+	margin-right: 45px;
+	margin-top: 48px;
+}
+.border h2 {
+	color: darkorange;
+	padding-top: 33px;
+	margin-left: 16px;
+	
+}
+.border p{
+    text-transofrm: uppercase;
+	text-align: center;
+	font-size: 26px;
+	margin-bottom: 20px;
+	color: #486255;
+    border-radius: 5px;
+    padding: 20px;
+	top: 45px;
+}
+.input{
+	width: 63%;
+	padding: 10px;
+	margin-bottom: 24px;
+	margin-left: 64px;
+	
+	/*margin bottom gives boxes spaces underneath each other.*/
+	
+}
+.msg{
+	padding-top: 15px;
+	padding-right: 45px;
+	padding-left: 65px;
+	height: 20px;
+	width: 94%;
+}
+.area{
+	height:200px;
+	
+}
+textarea{
+	padding: 45px;
+	height: 25px;
+	margin-right: 40px;
+	width: 48%;
+}
+#btn{
+	width: 215px;
+	background: #486255;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	text-transform: uppercase;
+	margin: -60px 60px;
+	margin-top: 125px;
+	margin-left: 89px;
+	cursor: pointer;
+	border-radius: 5px;	
+}
+#btn:hover,
+#btn:active{
+    background-color: green;
+}
+
+
+
+
+/* ==========================================================================
+  Order Page
+   ========================================================================== */
+
+
+.hero-area-p_2 {
+	background-image: url("img/cover (2).png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: -141px;
+	
+	
+	min-height: 290px;
+	/*padding-top: 58px;* I had a white space b/w the nav and picture. so I had this, but now with the min-height it makes the picture show its entirty and closes the white gap*/
+
+  	display: flex;
+  	justify-content: center;
+  	flex-flow: row wrap;	
+}
+.wrapper h1{
+	color: white;
+	font-family: 'DM Serif Display', serif;
+	font-size: 2em;
+	margin-top: 74px;
+	text-align: center;
+}
+.hero-area-p_2 {
+	padding-left:35px;
+	padding-top: 175px;
+	text-align: center;
+}
+.hero-area-p_2 .wrapper .overlay{
+	background: rgba(0, 0, 0, 0.7);
+	background-size: 100px;
+	position: absolute;
+	/*top: 43;
+	left: 0;*/
+	min-height: 490px;
+	width: 100%;
+	
+}
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+	
+
+
+	
+	
+
+
+
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
