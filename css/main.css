@@ -97,8 +97,11 @@ html {
  
 body {
   font-size: 1em;
+  font-family: 'Cormorant SC', serif;
+  font-family: 'Viaoda Libre', cursive; /*spooky-font*/	
   font-family: 'Domine', serif;
-  font-family: 'Cormorant SC', serif;	
+  font-family: 'DM Serif Display', serif; /* slanted*/
+  font-family: 'Mate SC', serif; /*slanted*/	
   color: #e2e3ed;
   text-align: left;
 }
@@ -262,6 +265,7 @@ header li:active{
     background-color: #527158;
 }
 
+
 				/* -------------------- Mobile Styles - Homepage -------------------- */ 
 
 
@@ -291,7 +295,7 @@ header li:active{
 	position: absolute;
 	/*top: 43;
 	left: 0;*/
-	min-height: 490px;
+	/*min-height: 490px;*/
 	width: 100%;
 	
 }
@@ -428,7 +432,6 @@ btn-ghost means see throught button: example- second button*/
 }
 .second_group p {
 	color: dimgrey;
-	font-family: 'DM Serif Display', serif;
 	font-style: italic;
 	margin-bottom: 45px;
 	padding-left: 55px;
@@ -438,6 +441,338 @@ btn-ghost means see throught button: example- second button*/
 }
 
 /*DESSERT SECTION*/
+
+
+
+
+/* ==========================================================================
+  About Page
+   ========================================================================== */
+
+
+#top-chef h1{
+	margin-left: 34px;
+	text-align: center;
+}
+#top-chef img{
+	margin-top: 115px;
+}
+.biography p{
+	color: black;
+	margin-left: 15px;
+	text-align: center;
+	text-align: justify;
+	word-wrap: break-word;
+	width: 94%;
+	
+}
+.listings h2{
+	color: darkorange;
+	margin-left: 24px;
+	text-align: center;
+}
+#top-chef, .listings p{
+	color: black;
+	margin-left: 34px;
+	text-align: center;
+	word-wrap: break-word;
+	width: 84%;
+}
+#top-chef ul li{
+	color: black;
+	line-height: 34px;
+	margin-right: 64px;
+	text-align: center;
+}
+
+
+
+/* ==========================================================================
+  Order Page
+   ========================================================================== */
+
+
+.hero-area-p_2 {
+	background-image: url("img/cover (2).png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: -141px;
+	
+	
+	min-height: 230px;
+	/*padding-top: 58px;* I had a white space b/w the nav and picture. so I had this, but now with the min-height it makes the picture show its entirty and closes the white gap*/
+
+  	display: flex;
+  	justify-content: center;
+  	flex-flow: row wrap;	
+}
+.wrapper h1{
+	color: white;
+	font-family: 'DM Serif Display', serif;
+	font-size: 2em;
+	margin-top: 74px;
+	text-align: center;
+}
+.hero-area-p_2 {
+	padding-left:35px;
+	padding-top: 175px;
+	text-align: center;
+	min-height: 240px;
+		
+}
+.overlay{
+	background: rgba(0, 0, 0, 0.7);
+	background-size: 100px;
+	position: absolute;
+	/*top: 43;
+	left: 0;*/
+	min-height: 440px;
+	width: 100%;
+	
+}
+
+.dishes{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	align-content: center;
+}
+/*.dish-wrapper article, figure img{
+	margin-bottom: 45px;
+	width: 70%;*/
+
+.dish-wrapper .description {
+	color: black;
+	text-align: center;
+	font-family: 'Domine', serif;
+  /*font-family: 'Cormorant SC', serif;*/
+}
+
+
+/* ==========================================================================
+  Reservations Page
+   ========================================================================== */
+
+.reservations{
+	background-image: url("img/background 3.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: -30px;
+	width: 100%;
+}	
+.here-text-box h2{
+	color: white;
+	text-align: center;
+	font-size: 1.3em;
+	line-height: 23px;
+	margin-top: 85px;
+	padding-left: 33px;
+
+	
+}
+/*
+.overlay_3{
+	background: rgba(0, 5, 5, 0.5);
+	background-size: 100px;
+	position: absolute;
+	/*top: 43;
+	left: 0;*/
+	/*min-height: 490px;*/
+	/*width: 100%;*/
+.overlay_3  {
+	padding-top: 45px;
+	padding-bottom: 45px;
+	top: 77px;
+	max-width: 100%;
+	background: rgba(0, 5, 5, 0.5);
+	height: 55px;
+	
+}
+
+/* ==========================================================================
+  Employment Page
+   ========================================================================== */
+
+.job_applications {
+	background:url("img/job_pic.png");
+	background-size: cover;
+	padding-top: 124px;
+	/*padding-bottom: 95px;*/
+	margin-bottom: -175px;
+	
+}
+.box{
+	background: white;
+	margin-left:25px;
+	margin-right: 25px;
+	padding-bottom: 99px;
+	
+}
+.box_container{
+	color: purple;
+	width: 100%;
+	margin: 40px 30px;
+	padding: 12px auto 24px;
+}
+
+h1{
+	text-decoration: underline;
+	margin-right: 48px;
+}
+h2,h4{
+	padding:0; margin:0;
+
+}
+.First-job p{
+	color: black;
+	padding-left: 12px;
+	text-align: justify;
+	word-wrap: break-word;
+	width: 83%;
+}
+.First-job h3{
+	margin-left: -32px;
+	text-align: center;
+}
+.First-job li{
+	color: black;
+	margin-left: -34px;
+	text-align: center;
+	
+}
+.Second-job p{
+	color: black;
+	padding-left: 12px;
+	text-align: justify;
+	word-wrap: break-word;
+	width: 83%;
+}
+.Second-job h3{
+	margin-left: -32px;
+	text-align: center;
+}
+.Second-job li{
+	color: black;
+	margin-left: -34px;
+	text-align: center;
+	
+}
+.Third-job p{
+	color: black;
+	padding-left: 12px;
+	text-align: justify;
+	word-wrap: break-word;
+	width: 83%;
+}
+.Third-job h3{
+	margin-left: -32px;
+	text-align: center;
+}
+.Third-job li{
+	color: black;
+	margin-left: -34px;
+	text-align: center;
+}
+.First-job h2, .Second-job h2, .Third-job h2{
+	margin-left: 5px;
+}
+.First-job h4, .Second-job h4, .Third-job h4{
+	margin-left: -43px;
+	text-align: center;
+}
+.btn-resume{
+	width: 150px;
+	background: #486255;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	text-transform: uppercase;
+	margin: 55px auto;
+	cursor: pointer;
+	border-radius: 5px;	
+    position: absolute;
+    right: 150px;
+}
+.btn-resume:hover,
+.btn-resume:active{
+    background-color: green;
+}
+
+
+
+
+
+/*
+.container{
+	width: 95%;
+	overflow: hidden;
+	margin: 20px auto;
+	padding: 20px;
+}
+*/
+
+
+
+/* ==========================================================================
+  Faq Page
+   ========================================================================== */
+
+.Q_and_A{
+	background:url("img/job_pic.png");
+	background-size: cover;
+	padding-top: 124px;
+	padding-bottom: 95px;
+	margin-bottom: -175px;
+}
+.box_2{
+	background: white;
+	margin-left:25px;
+	margin-right: 25px;
+	padding-bottom: 99px;
+}
+.box_container_2 h1{
+	font-family: 'Viaoda Libre', cursive;
+	padding-top: 54px;
+	text-align: center;
+}
+.box_container_2 h2{
+	font-size: 1.5em;
+	line-height: 23px;
+	padding-bottom: 30px;
+	padding-left: 44px;
+	text-align: justify;
+	word-wrap: break-word;
+	width: 75%;
+}
+.box_container_2 h4{
+	color: black;
+	line-height: 16px;
+	margin-left: 44px;
+	word-wrap: break-word;
+	width: 79%;
+}
+.box_container_2 p{
+	color: darkslategray;
+	line-height: 18px;
+	text-align: left;
+	text-align: justify;
+	margin-left: 46px;
+	word-wrap: break-word;
+	width: 78%;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -481,7 +816,6 @@ position: absolute;
 	
 	/*Another to move an element up, down, left, you need position relative*/
 	/*top means breinging an element downwards*/
-
 
 .contact_page {
 	background: url("img/background2 - Copy.png");
@@ -557,57 +891,6 @@ textarea{
 #btn:active{
     background-color: green;
 }
-
-
-
-
-/* ==========================================================================
-  Order Page
-   ========================================================================== */
-
-
-.hero-area-p_2 {
-	background-image: url("img/cover (2).png");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	margin-top: -141px;
-	
-	
-	min-height: 290px;
-	/*padding-top: 58px;* I had a white space b/w the nav and picture. so I had this, but now with the min-height it makes the picture show its entirty and closes the white gap*/
-
-  	display: flex;
-  	justify-content: center;
-  	flex-flow: row wrap;	
-}
-.wrapper h1{
-	color: white;
-	font-family: 'DM Serif Display', serif;
-	font-size: 2em;
-	margin-top: 74px;
-	text-align: center;
-}
-.hero-area-p_2 {
-	padding-left:35px;
-	padding-top: 175px;
-	text-align: center;
-}
-.hero-area-p_2 .wrapper .overlay{
-	background: rgba(0, 0, 0, 0.7);
-	background-size: 100px;
-	position: absolute;
-	/*top: 43;
-	left: 0;*/
-	min-height: 490px;
-	width: 100%;
-	
-}
-	
-	
-	
-
-
 
 
 
