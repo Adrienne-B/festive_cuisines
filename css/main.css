@@ -288,11 +288,12 @@ header li:active{
 	font-size: 2em;
 	margin-top: 74px;
 	text-align: center;
+	padding-left: 38px;
 }
 .overlay{
 	background: rgba(0, 0, 0, 0.5);
-	background-size: 100px;
-	position: absolute;
+	background-size: cover;
+	/*position: absolute;* it was preventing the overlay from staying inplace*/
 	/*top: 43;
 	left: 0;*/
 	/*min-height: 490px;*/
@@ -302,9 +303,9 @@ header li:active{
 
 .btn {
 	display: inline-block;
-	font-weidght: 300px;
+	font-weight: 300;
 	margin: 10px;
-	padding: 10px 30px;
+	padding: 10px 36px;
 	text-decoration: none;
 
 	/*padding is the hight or how big something will be such as - the buttons height*/
@@ -353,7 +354,10 @@ btn-ghost means see throught button: example- second button*/
   	justify-content: center;
   	flex-flow: row wrap;
 }
-
+.entrees_section h2 u{
+	padding-top: 34px;
+	padding-left: 34px;
+}
 
 
 /*ENTREES SECTION*/
@@ -406,15 +410,32 @@ btn-ghost means see throught button: example- second button*/
 .appetizer .wrapper h2 {
 	color: white;
 }
-.appetizer  .wrapper p {
+.wallpaper-A {
 	color: white;
-	line-height: 15px;
 	text-align: center;
+	padding-left: 28px;
+	padding-top: 14px;
 	
 }
-.appetizer .overlay {
+#wallpaper-description{
+	text-align: center;
+	padding-left: 45px;
+	word-wrap: 45px;
+	width: 80%;
+}
+.description_2 {
+	line-height: 12px;
+	word-wrap: 45px;
+	width: 45%;
+	text-align: center;
+}
+.overlay_2 {
 	height: 14px;
 	max-width: 100%;
+	min-height: 201px;
+	background: rgba(0, 0, 0, 0.6);
+	background-size: cover;
+	position: absolute;
 }
 /*.here-text-box article p {
 	font-size: 2.5em;
@@ -423,6 +444,8 @@ btn-ghost means see throught button: example- second button*/
 	font-size: 1.5em;
 	text-align: center;
 	text-decoration: underline;
+	padding-top: 34px;
+	padding-left: 14px;
 }
 .second_group h3{
 	color: black;
@@ -432,12 +455,15 @@ btn-ghost means see throught button: example- second button*/
 }
 .second_group p {
 	color: dimgrey;
-	font-style: italic;
 	margin-bottom: 45px;
 	padding-left: 55px;
 	text-align: center;
 	word-break: break-all;
 	width: 72%;
+}
+.price{
+	color: black;
+	text-align: center;
 }
 
 /*DESSERT SECTION*/
@@ -464,12 +490,8 @@ btn-ghost means see throught button: example- second button*/
 	text-align: justify;
 	word-wrap: break-word;
 	width: 94%;
+	font-family: 'Cormorant SC', serif;
 	
-}
-.listings h2{
-	color: darkorange;
-	margin-left: 24px;
-	text-align: center;
 }
 #top-chef, .listings p{
 	color: black;
@@ -481,55 +503,116 @@ btn-ghost means see throught button: example- second button*/
 #top-chef ul li{
 	color: black;
 	line-height: 34px;
-	margin-right: 64px;
+	margin-left: -42px;
+	text-align: center;
+	font-family: 'Domine', serif;
+}
+.listings h2{
+	color: darkorange;
+	margin-left: 24px;
 	text-align: center;
 }
-
-
-
+.parallax{
+	background: url("img/chef crew.png"); 
+	background-attachment: fixed;
+	background-size: cover;
+	height: 220px;
+	
+}
+.executive-chef img, .station-chef img, .pastry-chef img{
+	padding-left: 39px;
+	padding-right: -39px;
+	width: 85%;
+}
+.executive-chef h3 strong, .station-chef h3 strong, .pastry-chef h3 strong{
+	color: black;
+	text-align: center;
+	margin-left: 185px; /*GET NITIN TO LOOKAT THIS*/
+	
+}
+.executive-chef p{
+	color: black;
+	margin-left: 59px;
+	word-wrap: break-word;
+	width: 74%;
+	text-align: center;
+	margin-bottom: 55px;
+}
+.station-chef p{
+	color: black;
+	word-wrap: break-word;
+	width: 74%;
+	margin-left:64px;
+	text-align: center;
+	margin-bottom: 55px;
+}
+.pastry-chef p{
+	color: black;
+	word-wrap: break-word;
+	width: 70%;
+	text-align: center;
+	margin-left: 68px;
+}
+.executive-chef p{
+	color: black;
+	margin-left: 15px;
+	word-wrap: break-word;
+	width: 94%;
+}
 /* ==========================================================================
   Order Page
    ========================================================================== */
 
-
-.hero-area-p_2 {
-	background-image: url("img/cover (2).png");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	margin-top: -141px;
-	
-	
-	min-height: 230px;
-	/*padding-top: 58px;* I had a white space b/w the nav and picture. so I had this, but now with the min-height it makes the picture show its entirty and closes the white gap*/
-
-  	display: flex;
+.hero-area_2{
+	display: flex;
   	justify-content: center;
-  	flex-flow: row wrap;	
+  	flex-flow: row wrap;
+	background-image: url("img/cover (2).png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	
 }
-.wrapper h1{
+.hero-area_2 .container {
+background-position: center;
+margin-top:-5rem; /*margin-top: -94px;*/
+background-size: cover;
+
+					in-height: 130px;
+					/*padding-top: 58px;* I had a white space b/w the nav and picture. so I had this, but now with the min-height it makes the picture show its entirty and closes the white gap*/
+					width: 100%;
+  		
+}
+ .container #overlay{
+	background: rgba(0, 0, 0, 0.5);
+	background-size: 100px;
+	/*position: absolute;*/
+	 position: relative;
+	/*min-height: 90px;*/
+	width: 100%;
+	padding-bottom: 56px;
+	
+	
+}
+.hero-area_2 .container h1{
 	color: white;
 	font-family: 'DM Serif Display', serif;
 	font-size: 2em;
-	margin-top: 74px;
+	margin-top: 5rem;		/*margin-top: 94px;*/
 	text-align: center;
+	padding-top: 7rem;		/*padding-top: 85px;*/
+
 }
 .hero-area-p_2 {
-	padding-left:35px;
-	padding-top: 175px;
+	padding-left:62px;
+	padding-top: -77px;
 	text-align: center;
-	min-height: 240px;
+	min-height: 15rem;						/*min-height: 240px;*/
+	word-break: break-all;
+	width: 75%;
 		
 }
-.overlay{
-	background: rgba(0, 0, 0, 0.7);
-	background-size: 100px;
-	position: absolute;
-	/*top: 43;
-	left: 0;*/
-	min-height: 440px;
-	width: 100%;
-	
+.hero-area-p_2{
+	*margin-bottom: -86px;
 }
 
 .dishes{
@@ -548,8 +631,58 @@ btn-ghost means see throught button: example- second button*/
 	font-family: 'Domine', serif;
   /*font-family: 'Cormorant SC', serif;*/
 }
-
-
+.dish-wrapper article figure img{
+	width: 55%;
+	padding-left: 85px;
+}
+.description {
+	color: black;
+    font-size: 1.2em;
+	word-wrap: break-word;
+	width: 65%;
+	text-align: center;
+	line-height: 16px;
+	padding-left: 5rem;/*padding-left: 88px;*/
+}
+.description_2{
+	font-size: 1.2em;
+	color: black;
+	word-wrap: break-word;
+	width: 65%;
+	text-align: center;
+	line-height: 16px;
+	padding-left: 5rem;/*padding-left: 88px;*/
+}
+.description_3{
+   font-size: 1.2em;
+	color: black;
+	word-wrap: break-word;
+	width: 55%;
+	text-align: center;
+	line-height: 16px;
+	padding-left: 7rem;/*padding-left: 98px;*/
+}
+.description_4{
+	color: black;
+    font-size: 1.2em;
+	word-wrap: break-word;
+	width: 65%;
+	text-align: center;
+	line-height: 16px;
+	padding-left: 5rem;/*padding-left: 88px;*/
+}
+.description_5{
+	color: black;
+    font-size: 1.2em;
+	word-wrap: break-word;
+	width: 65%;
+	text-align: center;
+	line-height: 16px;
+	padding-left: 5rem;/*padding-left: 88px;*/
+}
+.price{
+	font-size: 1.3em;
+}
 /* ==========================================================================
   Reservations Page
    ========================================================================== */
@@ -561,16 +694,21 @@ btn-ghost means see throught button: example- second button*/
 	background-position: center;
 	margin-top: -30px;
 	width: 100%;
+	padding-top: 6rem;
+	padding-bottom: 17rem;
 }	
 .here-text-box h2{
 	color: white;
 	text-align: center;
 	font-size: 1.3em;
 	line-height: 23px;
-	margin-top: 85px;
-	padding-left: 33px;
+	margin-top: 5px;
+	/*padding-left: 33px;*/
 
-	
+		background: rgba(0, 5, 5, 0.8);
+	padding-top: 4rem;
+	padding-bottom: 7rem;
+	padding-left: 47px;
 }
 /*
 .overlay_3{
@@ -582,15 +720,48 @@ btn-ghost means see throught button: example- second button*/
 	/*min-height: 490px;*/
 	/*width: 100%;*/
 .overlay_3  {
-	padding-top: 45px;
+	/*padding-top: 45px;
 	padding-bottom: 45px;
-	top: 77px;
+	top: 77px;*/
 	max-width: 100%;
-	background: rgba(0, 5, 5, 0.5);
-	height: 55px;
+	/*background: rgba(0, 5, 5, 0.5);*/
 	
+	padding: 4rem;
+	height: 55px;
+}
+.btn-full_2{
+	/*color: darkorange;*/
+	/*background-color: #e67e22;*/
+		border: 2px solid #FF6500;
+	border-radius: 200px;
+	color: #fff;
+	display: inline-block; /*what is this for I may deleteit?*/
+
 }
 
+.btn:hover,
+.btn:active{
+    background-color: #EB4600;
+}
+.here-text-box{
+	display: flex;
+	flex-flow: row wrap;
+	 
+} 
+.here-text-box, .btn-full_2{
+	justify-content: center;
+	align-items: center;
+}
+.area_2{
+	padding-top: 0.9rem;
+	padding-bottom: 0.19rem;
+	padding-right: 0.3rem;
+	
+}
+.area_2 .btn-full_2{
+	margin-top: 45rem;
+	
+}
 /* ==========================================================================
   Employment Page
    ========================================================================== */
@@ -598,88 +769,104 @@ btn-ghost means see throught button: example- second button*/
 .job_applications {
 	background:url("img/job_pic.png");
 	background-size: cover;
-	padding-top: 124px;
-	/*padding-bottom: 95px;*/
-	margin-bottom: -175px;
+	padding-top: 8rem;							/*padding-top: 124px;*/
+	margin-top: -55px;
+	margin-bottom: -55px;
 	
+	
+	
+	/*margin-bottom: -175px;* This caused the white background to not "float"
+ and it was stuck to the background which made it hard to move it up.*/	
 }
 .box{
 	background: white;
 	margin-left:25px;
 	margin-right: 25px;
-	padding-bottom: 99px;
+	padding-bottom: 199px;
 	
 }
-.box_container{
+.box_container h1{
+	color: darkorange;
+	text-decoration: underline;
+	text-align: center;
+}
+.box_container h3{
 	color: purple;
-	width: 100%;
-	margin: 40px 30px;
+	weight: 100;
+	margin: 40px 10px 0px;
 	padding: 12px auto 24px;
 }
 
-h1{
-	text-decoration: underline;
-	margin-right: 48px;
-}
 h2,h4{
-	padding:0; margin:0;
+	padding:0;
+	margin:0;
+}
 
+.First-job h3{
+	margin-left: 20px;
+	text-align: center;
 }
 .First-job p{
 	color: black;
-	padding-left: 12px;
+	padding-left: 34px;
 	text-align: justify;
 	word-wrap: break-word;
 	width: 83%;
-}
-.First-job h3{
-	margin-left: -32px;
-	text-align: center;
+	line-height: 17px;
+
 }
 .First-job li{
 	color: black;
-	margin-left: -34px;
+	margin-left: -4px;
 	text-align: center;
+	font-family: 'Domine', serif;
+	font-size: 0.89em;
 	
+}
+.Second-job h3{
+	/*margin-left: -32px;*/
+	text-align: center;
 }
 .Second-job p{
 	color: black;
-	padding-left: 12px;
+	padding-left: 34px;
 	text-align: justify;
 	word-wrap: break-word;
 	width: 83%;
-}
-.Second-job h3{
-	margin-left: -32px;
-	text-align: center;
+	line-height: 17px;
 }
 .Second-job li{
 	color: black;
-	margin-left: -34px;
+	margin-left: 5px;
 	text-align: center;
+	font-family: 'Domine', serif;
+	font-size: 0.89em;
 	
+}
+.Third-job h3{
+	margin-left: 32px;
+	text-align: center;
 }
 .Third-job p{
 	color: black;
-	padding-left: 12px;
+	padding-left: 34px;
 	text-align: justify;
 	word-wrap: break-word;
 	width: 83%;
-}
-.Third-job h3{
-	margin-left: -32px;
-	text-align: center;
+	line-height: 17px;
 }
 .Third-job li{
 	color: black;
-	margin-left: -34px;
+	margin-left: 4px;
 	text-align: center;
+	font-family: 'Domine', serif;
+	font-size: 0.89em;
 }
 .First-job h2, .Second-job h2, .Third-job h2{
-	margin-left: 5px;
+	margin-left: 22px;
 }
 .First-job h4, .Second-job h4, .Third-job h4{
-	margin-left: -43px;
+	margin-left: -12px;
 	text-align: center;
 }
 .btn-resume{
@@ -694,25 +881,21 @@ h2,h4{
 	cursor: pointer;
 	border-radius: 5px;	
     position: absolute;
-    right: 150px;
+  	margin-left: 9rem;
+	margin-right: 15px
 }
 .btn-resume:hover,
 .btn-resume:active{
     background-color: green;
 }
-
-
-
-
-
-/*
-.container{
-	width: 95%;
-	overflow: hidden;
-	margin: 20px auto;
-	padding: 20px;
+hr{
+	width: 100%;
+	margin-left: -1px;
 }
-*/
+
+
+
+
 
 
 
@@ -723,15 +906,16 @@ h2,h4{
 .Q_and_A{
 	background:url("img/job_pic.png");
 	background-size: cover;
-	padding-top: 124px;
-	padding-bottom: 95px;
-	margin-bottom: -175px;
+	padding-top: 6rem;
+								/*padding-top: 124px;*/
+	padding-bottom: 4rem;							/*padding-bottom: 95px;*/
+	margin-top: -55px;
 }
 .box_2{
 	background: white;
 	margin-left:25px;
 	margin-right: 25px;
-	padding-bottom: 99px;
+	padding-bottom: 4rem;							/*padding-bottom: 99px;*/
 }
 .box_container_2 h1{
 	font-family: 'Viaoda Libre', cursive;
@@ -748,11 +932,13 @@ h2,h4{
 	width: 75%;
 }
 .box_container_2 h4{
-	color: black;
+	color: darkolivegreen;
 	line-height: 16px;
 	margin-left: 44px;
 	word-wrap: break-word;
 	width: 79%;
+	weight: 100;
+	font-family: 'Domine', serif;
 }
 .box_container_2 p{
 	color: darkslategray;
@@ -762,6 +948,8 @@ h2,h4{
 	margin-left: 46px;
 	word-wrap: break-word;
 	width: 78%;
+	
+	  font-family: 'Cormorant SC', serif;
 }
 
 
@@ -803,6 +991,7 @@ position: absolute;
 	margin-top: 90px;
 	padding-bottom: 74px;
 	padding-top: 8px;
+
 }
 .contact-page .border{
 	position: relative;
@@ -864,7 +1053,7 @@ position: absolute;
 	width: 94%;
 }
 .area{
-	height:200px;
+	height: 44rem; /*height:200px;*/
 	
 }
 textarea{
@@ -874,7 +1063,7 @@ textarea{
 	width: 48%;
 }
 #btn{
-	width: 215px;
+	width: 55%;
 	background: #486255;
 	height: 50px;
 	text-align: center;
@@ -882,7 +1071,7 @@ textarea{
 	color: #fff;
 	text-transform: uppercase;
 	margin: -60px 60px;
-	margin-top: 125px;
+	margin-top: 9rem;/*margin-top: 125px;*/
 	margin-left: 89px;
 	cursor: pointer;
 	border-radius: 5px;	
