@@ -97,7 +97,7 @@ html {
  
 body {
   font-size: 1em;
-  font-family: 'Cormorant SC', serif;
+  font-family: 'Cormorant SC', serif; /*the uppercase copperlate font*/	
   font-family: 'Viaoda Libre', cursive; /*spooky-font*/	
   font-family: 'Domine', serif;
   font-family: 'DM Serif Display', serif; /* slanted*/
@@ -365,7 +365,7 @@ btn-ghost means see throught button: example- second button*/
 	color: darkorange;
 	font-family: 'DM Serif Display', serif;
 	font-style: italic;
-	padding-top: -13px;
+	padding-top: 5px;
 	text-align: center;
 	width: 90%;
   	margin: 30px 20px;
@@ -379,20 +379,21 @@ btn-ghost means see throught button: example- second button*/
 	text-align: center;
 	width: 87%;
 }
-.main_group article h3 {
+.first_group article h3 {
 	color:  black;
 	font-family: 'Viaoda Libre', cursive;
 	font-size: 1.5em;
 	text-align: center;
 	/*text-decoration: underline;*/
 }
-.main_group article p{
+.first_group article p{
 	color: dimgrey;
 	margin-bottom: 45px;
 	margin-left: 30px;
 	word-wrap: break-word;
 	text-align: center;
 	width: 87%;
+	font-family: 'Domine', serif;
 
 }
 
@@ -410,24 +411,28 @@ btn-ghost means see throught button: example- second button*/
 .appetizer .wrapper h2 {
 	color: white;
 }
-.wallpaper-A {
+.wrapper p {
 	color: white;
 	text-align: center;
 	padding-left: 28px;
 	padding-top: 14px;
 	
 }
-#wallpaper-description{
+#divider h2{
 	text-align: center;
 	padding-left: 45px;
 	word-wrap: 45px;
 	width: 80%;
+	margin-top: 2rem;
 }
-.description_2 {
-	line-height: 12px;
-	word-wrap: 45px;
-	width: 45%;
+#divider p {
+	color: black;
+	margin-left: 33px;
+	margin-top: 13px;
+	word-wrap: break-word;
 	text-align: center;
+	width: 85%;
+	margin-bottom: 3rem;
 }
 .overlay_2 {
 	height: 14px;
@@ -437,9 +442,7 @@ btn-ghost means see throught button: example- second button*/
 	background-size: cover;
 	position: absolute;
 }
-/*.here-text-box article p {
-	font-size: 2.5em;
-	line-height: 25px;*/
+
 .second_group h2 {
 	font-size: 1.5em;
 	text-align: center;
@@ -458,17 +461,22 @@ btn-ghost means see throught button: example- second button*/
 	margin-bottom: 45px;
 	padding-left: 55px;
 	text-align: center;
-	word-break: break-all;
+	font-size: 18px;
+	word-wrap: break-word; 
 	width: 72%;
+	font-family: 'Domine', serif;
+}
+#cake p{
+	font-size: 18px;
+	word-wrap: break-word; 
+	width: 92%;
+	padding-left: 25px;
+	font-family: 'Domine', serif;
 }
 .price{
 	color: black;
 	text-align: center;
 }
-
-/*DESSERT SECTION*/
-
-
 
 
 /* ==========================================================================
@@ -476,29 +484,28 @@ btn-ghost means see throught button: example- second button*/
    ========================================================================== */
 
 
+
+#top-chef img{
+	margin-top: 6rem;
+	margin-left: 54px;
+	margin-right: 34px;
+	width: 77%;
+}
 #top-chef h1{
+	color: darkorange;
 	margin-left: 34px;
 	text-align: center;
-}
-#top-chef img{
-	margin-top: 115px;
+	font-size: 1.0em;
 }
 .biography p{
 	color: black;
-	margin-left: 15px;
-	text-align: center;
+	margin-left: 35px;
 	text-align: justify;
 	word-wrap: break-word;
-	width: 94%;
-	font-family: 'Cormorant SC', serif;
-	
-}
-#top-chef, .listings p{
-	color: black;
-	margin-left: 34px;
-	text-align: center;
-	word-wrap: break-word;
 	width: 84%;
+	font-family: 'Cormorant SC', serif;
+	font-size: 1.2em;
+	
 }
 #top-chef ul li{
 	color: black;
@@ -507,10 +514,18 @@ btn-ghost means see throught button: example- second button*/
 	text-align: center;
 	font-family: 'Domine', serif;
 }
-.listings h2{
+#listings h2{
 	color: darkorange;
-	margin-left: 24px;
+	margin-left: 42px;
 	text-align: center;
+}
+ #listings {
+	color: black;
+	margin-left: 22px;
+	text-align: center;
+	word-wrap: break-word;
+	width: 84%;
+	 line-height: 37px;
 }
 .parallax{
 	background: url("img/chef crew.png"); 
@@ -521,13 +536,12 @@ btn-ghost means see throught button: example- second button*/
 }
 .executive-chef img, .station-chef img, .pastry-chef img{
 	padding-left: 39px;
-	padding-right: -39px;
 	width: 85%;
 }
 .executive-chef h3 strong, .station-chef h3 strong, .pastry-chef h3 strong{
 	color: black;
 	text-align: center;
-	margin-left: 185px; /*GET NITIN TO LOOKAT THIS*/
+	margin-left: 11rem; /*GET NITIN TO LOOKAT THIS*/
 	
 }
 .executive-chef p{
@@ -574,22 +588,21 @@ btn-ghost means see throught button: example- second button*/
 }
 .hero-area_2 .container {
 background-position: center;
-margin-top:-5rem; /*margin-top: -94px;*/
+padding-top:-5rem; /*margin-top: -94px;*/
 background-size: cover;
 
-					in-height: 130px;
-					/*padding-top: 58px;* I had a white space b/w the nav and picture. so I had this, but now with the min-height it makes the picture show its entirty and closes the white gap*/
-					width: 100%;
+			
   		
 }
  .container #overlay{
 	background: rgba(0, 0, 0, 0.5);
-	background-size: 100px;
+	background-size: cover;
 	/*position: absolute;*/
 	 position: relative;
 	/*min-height: 90px;*/
 	width: 100%;
-	padding-bottom: 56px;
+	padding-bottom: 2px;
+	
 	
 	
 }
@@ -604,15 +617,12 @@ background-size: cover;
 }
 .hero-area-p_2 {
 	padding-left:62px;
-	padding-top: -77px;
+	/*padding-top: -77px;*/
 	text-align: center;
 	min-height: 15rem;						/*min-height: 240px;*/
 	word-break: break-all;
 	width: 75%;
-		
-}
-.hero-area-p_2{
-	*margin-bottom: -86px;
+	margin-bottom: -86px;
 }
 
 .dishes{
@@ -631,9 +641,19 @@ background-size: cover;
 	font-family: 'Domine', serif;
   /*font-family: 'Cormorant SC', serif;*/
 }
+
+/*
 .dish-wrapper article figure img{
 	width: 55%;
 	padding-left: 85px;
+}*/
+
+.second_group p{
+	font-size: 1.5em;
+	width: 85%;
+}
+.row{
+	width: 82%;
 }
 .description {
 	color: black;
@@ -644,42 +664,8 @@ background-size: cover;
 	line-height: 16px;
 	padding-left: 5rem;/*padding-left: 88px;*/
 }
-.description_2{
-	font-size: 1.2em;
-	color: black;
-	word-wrap: break-word;
-	width: 65%;
-	text-align: center;
-	line-height: 16px;
-	padding-left: 5rem;/*padding-left: 88px;*/
-}
-.description_3{
-   font-size: 1.2em;
-	color: black;
-	word-wrap: break-word;
-	width: 55%;
-	text-align: center;
-	line-height: 16px;
-	padding-left: 7rem;/*padding-left: 98px;*/
-}
-.description_4{
-	color: black;
-    font-size: 1.2em;
-	word-wrap: break-word;
-	width: 65%;
-	text-align: center;
-	line-height: 16px;
-	padding-left: 5rem;/*padding-left: 88px;*/
-}
-.description_5{
-	color: black;
-    font-size: 1.2em;
-	word-wrap: break-word;
-	width: 65%;
-	text-align: center;
-	line-height: 16px;
-	padding-left: 5rem;/*padding-left: 88px;*/
-}
+
+
 .price{
 	font-size: 1.3em;
 }
@@ -692,7 +678,6 @@ background-size: cover;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	margin-top: -30px;
 	width: 100%;
 	padding-top: 6rem;
 	padding-bottom: 17rem;
@@ -705,9 +690,9 @@ background-size: cover;
 	margin-top: 5px;
 	/*padding-left: 33px;*/
 
-		background: rgba(0, 5, 5, 0.8);
+	background: rgba(0, 5, 5, 0.8);
 	padding-top: 4rem;
-	padding-bottom: 7rem;
+	padding-bottom: 9rem;
 	padding-left: 47px;
 }
 /*
@@ -751,49 +736,55 @@ background-size: cover;
 .here-text-box, .btn-full_2{
 	justify-content: center;
 	align-items: center;
+
 }
+
 .area_2{
 	padding-top: 0.9rem;
 	padding-bottom: 0.19rem;
 	padding-right: 0.3rem;
 	
 }
-.area_2 .btn-full_2{
-	margin-top: 45rem;
-	
+.type_bar{
+	margin-top: -10rem;
 }
+.type_bar_2{
+	margin-top: -4rem;
+	margin-left: 17rem;
+}
+
 /* ==========================================================================
   Employment Page
    ========================================================================== */
 
 .job_applications {
 	background:url("img/job_pic.png");
-	background-size: cover;
-	padding-top: 8rem;							/*padding-top: 124px;*/
-	margin-top: -55px;
-	margin-bottom: -55px;
+	height: 100%;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
 	
-	
-	
-	/*margin-bottom: -175px;* This caused the white background to not "float"
- and it was stuck to the background which made it hard to move it up.*/	
+}
+.job_applications .box {
+	margin-bottom: -10rem;
 }
 .box{
 	background: white;
 	margin-left:25px;
 	margin-right: 25px;
-	padding-bottom: 199px;
+	padding-bottom: 5rem;
 	
 }
+
 .box_container h1{
 	color: darkorange;
 	text-decoration: underline;
 	text-align: center;
 }
 .box_container h3{
+	font-size: 1.9em;
 	color: purple;
 	weight: 100;
-	margin: 40px 10px 0px;
+	margin-top: 40px;
 	padding: 12px auto 24px;
 }
 
@@ -808,39 +799,42 @@ h2,h4{
 }
 .First-job p{
 	color: black;
-	padding-left: 34px;
+	padding-left: 3rem;
 	text-align: justify;
 	word-wrap: break-word;
-	width: 83%;
-	line-height: 17px;
+	width: 73%;
+	line-height: 32px;
+	font-size: 1.5em;
 
 }
 .First-job li{
 	color: black;
-	margin-left: -4px;
+	margin-right: 26px;
 	text-align: center;
 	font-family: 'Domine', serif;
-	font-size: 0.89em;
-	
+	font-size: 1.0em;
+	line-height: 3.0em;
 }
 .Second-job h3{
-	/*margin-left: -32px;*/
+	margin-left: 20px;
 	text-align: center;
 }
 .Second-job p{
 	color: black;
-	padding-left: 34px;
+	padding-left: 3rem;
 	text-align: justify;
 	word-wrap: break-word;
-	width: 83%;
-	line-height: 17px;
+	width: 73%;
+	line-height: 32px;
+	font-size: 1.5em;
 }
 .Second-job li{
 	color: black;
 	margin-left: 5px;
 	text-align: center;
 	font-family: 'Domine', serif;
-	font-size: 0.89em;
+	font-size: 1.0em;
+	line-height: 3.0em;
 	
 }
 .Third-job h3{
@@ -849,18 +843,20 @@ h2,h4{
 }
 .Third-job p{
 	color: black;
-	padding-left: 34px;
+	padding-left: 3rem;
 	text-align: justify;
 	word-wrap: break-word;
-	width: 83%;
-	line-height: 17px;
+	width: 76%;
+	line-height: 32px;
+	font-size: 1.5em;
 }
 .Third-job li{
 	color: black;
 	margin-left: 4px;
 	text-align: center;
 	font-family: 'Domine', serif;
-	font-size: 0.89em;
+	font-size: 1.0em;
+	line-height: 3.0em;
 }
 .First-job h2, .Second-job h2, .Third-job h2{
 	margin-left: 22px;
@@ -870,19 +866,18 @@ h2,h4{
 	text-align: center;
 }
 .btn-resume{
-	width: 150px;
+	width: 40%;
 	background: #486255;
 	height: 50px;
 	text-align: center;
 	line-height: 50px;
 	color: #fff;
 	text-transform: uppercase;
-	margin: 55px auto;
+	margin: 25px auto;
 	cursor: pointer;
 	border-radius: 5px;	
     position: absolute;
-  	margin-left: 9rem;
-	margin-right: 15px
+  	margin-left: 7rem;
 }
 .btn-resume:hover,
 .btn-resume:active{
@@ -909,7 +904,7 @@ hr{
 	padding-top: 6rem;
 								/*padding-top: 124px;*/
 	padding-bottom: 4rem;							/*padding-bottom: 95px;*/
-	margin-top: -55px;
+	
 }
 .box_2{
 	background: white;
@@ -956,56 +951,11 @@ hr{
 
 
 
-
-
-
-
-
-
-
-
-
 /* ==========================================================================
   Contact Page
    ========================================================================== */
 
-	/*
-.container, .img{
-	top: 2px;
-	left: auto;*/
 	
-	
-	
-	
-	/*having auto for top and left allow the top image to be perfectly center between the navigation bar and footer bar*/
-/*	
-position: absolute;
-	width: 80%;
-	 padding-left: 55px;
-	  margin-top: 123px;
-	
-	
-}
-.border{
-	background-color: white;
-	margin-top: 90px;
-	padding-bottom: 74px;
-	padding-top: 8px;
-
-}
-.contact-page .border{
-	position: relative;
-	width: 70%;
-	height: 540px;
-	margin-left: 35px;
-	padding-top: 45px;
-	background: white;
-	padding: 40px;
-	top: 85px;
-	
-	/*Another to move an element up, down, left, you need position relative*/
-	/*top means breinging an element downwards*/
-
 .contact_page {
 	background: url("img/background2 - Copy.png");
 	background-repeat: no-repeat;
@@ -1027,7 +977,7 @@ position: absolute;
 	
 }
 .border p{
-    text-transofrm: uppercase;
+    text-transform: uppercase;
 	text-align: center;
 	font-size: 26px;
 	margin-bottom: 20px;
@@ -1080,16 +1030,6 @@ textarea{
 #btn:active{
     background-color: green;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1183,11 +1123,1248 @@ textarea{
 	
 
 
+@media only screen and (min-width:768px) {
+  /*Tablet styles here*/	
+
+.container h1{
+	font-size: 2.7em;	
+}	
+.container{
+	display: flex;
+		
+	}	
+.btn-full, .btn-ghost{
+	margin-left: 8rem;	
+
+}
+.hero-area-p{
+	padding-left: 3rem;
+	font-size: 1.8em;
+}
+
+/*Hero section ends here*/	
+	
+	
+.entrees_section p{
+	font-size: 1.6em;
+}	
+.first_group, .row_1 h3{
+	font-size: 1.5em;	
+}	
+.first_group p{
+	font-size: 1.00em;
+	padding-left: 1rem;
+}
+	
+	
+/*First group ends here*/	
+	
+	
+ .wrapper #divider h2{
+	font-size: 2.4em;
+	text-decoration: underline;
+}
+ .wrapper, #divider p{
+	font-size: 1.3em;
+	 padding-right: 17px;
+	
+}
+	
+	
+/*Divider ends here*/		
+	
+	
+.second_group, .row_2 h3{
+	font-size: 1.2em;
+}
+.second_group .row_2 p{
+	font-size: 1.2em;
+	padding-left: 1rem;
+  font-family: 'Domine', serif;
+
+}
+#brownie, #cake, #musse p{
+		font-family: 'Domine', serif;
+}	
+
+/****End of Intro Hero**/	
+
+				/*	
+				.main_group{
+					display: flex;	
+				}	
+
+				.main_group img{
+					width: 63%;	
+				}*/
+					/*USE THIS FOR DESKTOP*/
+	
+	
+/* ==========================================================================
+  Order Page for Tablet
+   ========================================================================== */
+
+.hero-area_2 .container h1{
+	color: white;
+	font-family: 'DM Serif Display', serif;
+	font-size: 2.7em;
+	margin-top: 1rem;		/*margin-top: 94px;*/
+	text-align: center;
+	padding-top: 7rem;		/*padding-top: 85px;*/
+
+}
+.hero-area-p_2 {
+	padding-left:7rem;
+	padding-top: 1.0rem;
+	text-align: center;
+	min-height: 15rem;						/*min-height: 240px;*/
+	word-break: break-all;
+	width: 75%;
+	margin-bottom: 7rem;
+	font-size: 1.6em;
+	line-height: 29px;
+	
+}
+
+.dishes{
+	display: flex;
+	flex-flow: row wrap;
+	/*align-items: center;*/
+	/*align-content: center;*/
+}
+/*.dish-wrapper article, figure img{
+	margin-bottom: 45px;
+	width: 70%;*/
+.dish-wrapper{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+/*
+.dish-wrapper .description {
+	color: black;
+	text-align: center;
+	font-family: 'Domine', serif;
+  /*font-family: 'Cormorant SC', serif;*/
+.row {
+	width: 35%;
+	padding-left:55px;
+}
+
+.dish-wrapper article figure img{
+	width: 79%;
+	padding-left: 0.5rem;
+}
+.description {
+	color: black;
+    font-size: 2.0em;
+	word-wrap: break-word;
+	width: 95%;
+	text-align: center;
+	line-height: 26px;
+	padding-left: 2rem;/*padding-left: 88px;*/
+}
+.description_2{
+	 font-size: 2.0em;
+	color: black;
+	word-wrap: break-word;
+	width: 115%;
+	text-align: center;
+	line-height: 26px;
+	padding-left: 5rem;/*padding-left: 88px;*/
+}
+.description_3{
+   font-size: 2.0em;
+	color: black;
+	line-height: 26px;
+	word-wrap: break-word;
+	width: 125%;
+	text-align: center;
+	padding-left: 7rem;/*padding-left: 98px;*/
+}
+.description_4{
+	font-size: 2.0em;
+	color: black;
+	word-wrap: break-word;
+	width: 125%;
+	text-align: center;
+	line-height: 26px;
+	padding-left: 5rem;/*padding-left: 88px;*/
+}
+.description_5{
+	color: black;
+    font-size: 2.0em;
+	line-height: 26px;
+	width: 94%;
+	
+}
+.description_6{
+	color: black;
+    font-size: 2.0em;
+	line-height: 26px;
+	width: 94%;
+	
+}
+	
+	
+/* ==========================================================================
+  About Page for Tablet
+   ========================================================================== */
+
+#top-chef h1{
+	font-size: 3em;
+	margin-left: 14px;
+	text-align: center;
+}
+#top-chef img{
+	margin-top: 8rem;;
+	padding-left: 1rem;
+	width: 88%;
+}
+.biography p{
+	font-size: 1.9em;
+	color: black;
+	line-height: 1.6em;
+	margin-left: 28px;
+	text-align: center;
+	text-align: justify;
+	word-wrap: break-word;
+	width: 98%;
+	font-family: 'Cormorant SC', serif;
+	
+}
+#listings h2{
+	color: darkorange;
+	margin-left: 59px;
+	text-align: center;
+	font-size: 3em;
+	margin-bottom: 2.9rem;
+}
+#listings  ul, li{
+	color: black;
+	line-height: 79px;
+	padding-left: 2.4rem;
+	text-align: center;
+	font-family: 'Domine', serif;
+	font-size: 1.3em;
+}
+#top-chef, #listings p{
+	color: black;
+	margin-left: 34px;
+	text-align: center;
+	word-wrap: break-word;
+	width: 84%;
+
+}
+
+.parallax{
+	background: url("img/chef crew.png"); 
+	background-attachment: fixed;
+	background-size: cover;
+	height: 220px;
+	
+}
+.info-on-chefs{
+	display: flex;
+	flex-flow: row wrap;
+}
+.executive-chef img, .station-chef img, .pastry-chef img{
+	padding-left: 55px;
+	padding-right: 39px;
+	width: 85%;
+}
+.station-chef img{
+	width: 85%;
+}
+.pastry-chef img{
+	
+}
+.executive-chef h3 strong,
+.station-chef h3 strong, 
+.pastry-chef h3 strong{
+	font-size: 1.7em;
+	color: black;
+	text-align: center;
+	padding-left: 7rem;
+	/*margin-left: 185px; /*GET NITIN TO LOOKAT THIS*/
+	
+}
+.executive-chef p{
+	color: black;
+	margin-left: 76px;
+	word-wrap: break-word;
+	width: 76%;
+	text-align: center;
+	margin-bottom: 55px;
+	font-size: 1.8em;
+}
+.station-chef p{
+	color: black;
+	word-wrap: break-word;
+	width: 78%;
+	margin-left: 74px;
+	text-align: center;
+	margin-bottom: 55px;
+	font-size: 1.8em;
+}
+.pastry-chef p{
+	color: black;
+	word-wrap: break-word;
+	text-align: center;
+	margin-left: 58px;
+	font-size: 1.8em;
+	width: 80%;
+}
+
+
+
+/* ==========================================================================
+  FAQ Page For Tablet
+   ========================================================================== */
+
+
+.box_2{
+	background: white;
+	margin-left:55px;
+	margin-right: 55px;
+	padding-bottom: 5rem;							/*padding-bottom: 99px;*/
+}
+.box_container_2 h1{
+	font-family: 'Viaoda Libre', cursive;
+	padding-top: 54px;
+	text-align: center;
+	font-size: 3em;
+}
+.box_container_2 h2{
+	font-size: 1.5em;
+	line-height: 23px;
+	margin-left: 41px;
+	padding-left: 44px;
+	text-align: justify;
+	word-wrap: break-word;
+	width: 75%;
+}
+.box_container_2 h4{
+	color: darkolivegreen;
+	line-height: 22px;
+	margin-left: 77px;
+	word-wrap: break-word;
+	width: 79%;
+	weight: 100;
+	font-family: 'Domine', serif;
+	font-size: 1.5em;
+}
+.box_container_2 p{
+	color: darkslategray;
+	line-height: 26px;
+	text-align: left;
+	text-align: justify;
+		margin-left: 77px;
+	word-wrap: break-word;
+	width: 78%;
+	font-size: 1.7em;
+	  font-family: 'Cormorant SC', serif;
+}
+
+
+
+/* ==========================================================================
+  About Page for Tablet
+   ========================================================================== */
+
+
+#top-chef h1{
+	color: darkorange;
+	font-size: 3em;
+	margin-left: 50px;
+	text-align: center;
+}
+#top-chef img{
+	margin-top: 8rem;;
+	padding-left: 1rem;
+	width: 86%;
+}
+.biography p{
+	font-size: 1.8em;
+	color: black;
+	line-height: 1.8em;
+	margin-left: 28px;
+	text-align: center;
+	text-align: justify;
+	word-wrap: break-word;
+	width: 95%;
+	font-family: 'Cormorant SC', serif;
+	
+}
+#top-chef, .listings p{
+	color: black;
+	margin-left: 34px;
+	text-align: center;
+	word-wrap: break-word;
+	width: 84%;
+}
+
+.listings h2{
+	color: darkorange;
+	margin-left: 54px;
+	text-align: center;
+	font-size: 3.5em;
+}
+	#top-chef ul li{
+	color: black;
+	line-height: 79px;
+	margin-left: -4px;
+	text-align: center;
+	font-family: 'Domine', serif;
+	font-size: 1.7em;
+}
+.parallax{
+	background: url("img/chef crew.png"); 
+	background-attachment: fixed;
+	background-size: cover;
+	height: 220px;
+	
+}
+.info-on-chefs{
+	display: flex;
+}
+.executive-chef img, .station-chef img, .pastry-chef img{
+	padding-left: 83px;
+	width: 75%;
+	
+}
+
+.executive-chef h3 strong,
+.station-chef h3 strong, 
+.pastry-chef h3 strong{
+	font-size: 1.8em;
+	color: black;
+	text-align: center;
+	
+}
+.executive-chef p{
+	color: black;
+	margin-left: 87px;
+	word-wrap: break-word;
+	width: 73%;
+	margin-bottom: 55px;
+	font-size: 1.8em;
+	text-align: justify;
+}
+.station-chef p{
+	color: black;
+	word-wrap: break-word;
+	width: 73%;
+	margin-left: 82px;
+	margin-bottom: 55px;
+	font-size: 1.8em;
+	text-align: justify;
+}
+.pastry-chef p{
+	color: black;
+	word-wrap: break-word;
+	width: 73%;
+	text-align: justify;
+	margin-left: 88px;
+	font-size: 1.8em;
+}
+
+
+/* ==========================================================================
+  Reservation Page For Tablet
+   ========================================================================== */	
+
+
+.here-text-box{
+	width: 123%;
+}
+.here-text-box h2{
+	color: white;
+	text-align: center;
+	font-size: 1.8em;
+	line-height: 30px;
+	margin-top: 5px;
+	/*padding-left: 33px;*/
+
+	background: rgba(0, 5, 5, 0.8);
+	padding-top: 4rem;
+	padding-bottom: 9rem;
+	padding-right: 12rem;
+}
+
+.overlay_3  {
+	width: 45rem;
+	/*background: rgba(0, 5, 5, 0.5);*/
+	
+	padding: 4rem;
+	margin-left: 4rem;
+	height: 55px;
+}
+.btn-full_2{
+	/*color: darkorange;*/
+	/*background-color: #e67e22;*/
+		border: 2px solid #FF6500;
+	border-radius: 200px;
+	color: #fff;
+	display: inline-block; /*what is this for I may deleteit?*/
+
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #EB4600;
+}
+.here-text-box{
+	display: flex;
+	flex-flow: row wrap;
+	 
+} 
+.here-text-box .btn-full_2{
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.area_2{
+	padding-top: 0.9rem;
+	padding-bottom: 0.19rem;
+	padding-right: 1.3rem;
+	
+}
+.type_bar{
+	margin-top: -10rem;
+}
+.type_bar_2{
+	margin-top: -4rem;
+	margin-left: 17rem;
+	}	
+
+
+
+/* ==========================================================================
+  Contact Page For Tablet
+   ========================================================================== */
+
+	
+.border-wrapper{
+	background: white;
+	padding-bottom: 6rem;
+	padding-top: 2rem;
+	margin-left: 8rem;
+	margin-right: 8rem;
+	margin-top: 6rem;
+}
+.border h2 {
+	color: darkorange;
+	padding-top: 10px;
+	padding-bottom: 2rem;
+	margin-left: 16px;
+	font-size: 2.7em;
+	
+}
+.border p{
+    text-transform: uppercase;
+	text-align: center;
+	font-size: 26px;
+	margin-bottom: 20px;
+	color: #486255;
+    border-radius: 5px;
+    padding: 20px;
+	top: 45px;
+}
+.input{
+	width: 55%;
+	padding: 8px;
+	margin-bottom: 24px;
+	margin-left: 6rem;
+	
+	/*margin bottom gives boxes spaces underneath each other.*/
+	
+}
+.msg{
+	padding-top: 15px;
+	padding-right: 5px;
+	padding-left: 6rem;
+	height: 20px;
+	width: 83%;
+}
+.area{
+	height: 47rem; /*height:200px;*/
+	
+}
+textarea{
+	padding: 45px;
+	height: 35px;
+	margin-right: 40px;
+	width: 48%;
+}
+#btn{
+	width: 29%;
+	background: #486255;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	text-transform: uppercase;
+	margin: -60px 60px;
+	margin-top: 9rem;/*margin-top: 125px;*/
+	margin-left: 11rem;
+	cursor: pointer;
+	border-radius: 5px;	
+}
+#btn:hover,
+#btn:active{
+    background-color: green;
+	
+}
+}
+
+
+
+@media only screen and (min-width:1200px) {
+	
+.overlay h1{
+	color: white;
+	font-family: 'DM Serif Display', serif;
+	font-size: 3em;
+	margin-top: 74px;
+	text-align: center;
+	padding-left: 38px;
+}
+.hero-area {
+	display: flex;
+}
+.container .btn-full, .btn-ghost{
+	justify-content: center;
+	margin-left: 9rem;
+	margin-right: 1rem; /**close the space in b/w the buttons**/
+}	
+.btn-full .btn-ghost{
+		margin-left: 45rem;
+}	
+.btn {
+	display: inline-block;
+	font-weight: 300;
+	margin: 10px;
+	padding: 10px 36px;
+	text-decoration: none;
+
+	/*padding is the hight or how big something will be such as - the buttons height*/
+	/*the margins help put a space between the two buttons*/
+}
+.btn-full{
+	background-color: #e67e22;
+	border-radius: 200px;
+	color: #fff;
+	display: inline-block;
+	
+}
+
+ .btn-ghost{
+	border: 1px solid #FF6500;
+	border-radius: 200px;
+	color: darkorange;
+	left: 35%;
+}
+.btn:hover,
+.btn:active{
+    background-color: #EB4600;
+}
+/*border-radius means making the button or a shape rounder around the edges
+btn-ghost means see throught button: example- second button*/
+
+
+.btn-full, .btn-ghost {
+	margin-left: 2.0rem;
+	margin-top: 34px;
+	/*padding-left: 10rem;*/
+}
+.overlay .hero-area-p {
+	color: white;
+	font-family: 'Mate SC', serif;
+	font-style: italic;
+	font-size: 2.0em;
+	line-height: 1.0em;
+	margin-top: 34px;
+	margin-left: 16rem;
+	text-align: center;
+	word-wrap: break-word;
+	width: 51%;
+}
+.entrees_section {
+	display: flex;
+  	justify-content: center;
+  	flex-flow: row wrap;
+}
+.entrees_section h2 u{
+	padding-top: 34px;
+	padding-left: 34px;
+
+}
+
+
+/*ENTREES SECTION*/
+.container-wrapper,  u, h2{
+	color: darkorange;
+	font-family: 'DM Serif Display', serif;
+	font-style: italic;
+	padding-top: 2rem;
+	text-align: center;
+	width: 90%;
+  	margin: 30px 20px;
+	font-size: 1.4em;
+	
+}
+.container-wrapper p{
+	color: black;
+	margin-left: 4rem;
+	margin-top: 13px;
+	word-wrap: break-word;
+	text-align: center;
+	width: 87%;
+	font-size: 1.2em;
+}
+	
+/*quote section */	
+	
+.first_group{
+	display: flex;
+	flex-flow: row wrap;	
+}
+.row_1 {
+	width: 25%;
+	margin-left: 5rem;
+}
+.first_group article h3 {
+	color:  black;
+	font-family: 'Viaoda Libre', cursive;
+	font-size: 1.5em;
+	text-align: center;
+	/*text-decoration: underline;*/
+}
+.first_group article img{
+	width: 65%;	
+	margin-left: 3rem;
+}	
+.first_group article p{
+	color: dimgrey;
+	margin-bottom: 45px;
+	margin-left: 30px;
+	word-wrap: break-word;
+	text-align: justify;
+	width: 92%;
+	font-size: 1.0em;
+	text-align: left;
+
+}
+	
+
+/*APPETIZER SECTION*/
+
+.appetizer {
+	background: url("img/appetizer.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 18rem;
+	width: 100%;
+	
+}
+.overlay_2{
+	margin-top: 8px;
+	height: 17.5rem;
+}	
+.wrapper h2 {
+	color: white;
+	text-align: center;
+	padding-left: 38px;
+	padding-top: 34px;
+	font-size: 1.8rem;
+	
+}
+.wrapper p{
+	color: white;
+	margin-left: 14rem;
+	margin-top: 13px;
+	word-wrap: break-word;
+	text-align: center;
+	width: 58%;
+	font-size: 1.2em;
+}
+#wallpaper-description{
+	text-align: center;
+	word-wrap: 45px;
+	width: 78%;
+	font-size: 1.3em;
+	padding-left: 7rem;
+}
+.description_2 {
+	line-height: 12px;
+	word-wrap: 45px;
+	width: 45%;
+	text-align: center;
+}
+.overlay_2 {
+	height: 18rem;
+	max-width: 100%;
+	min-height: 201px;
+	background: rgba(0, 0, 0, 0.6);
+	background-size: cover;
+	position: relative;
+}
+ #divider h2{
+	color: darkorange;
+	font-family: 'DM Serif Display', serif;
+	font-style: italic;
+	padding-top: 2rem;
+	text-align: center;
+	width: 90%;
+  	margin-top: 30px;
+	margin-left: 3rem;
+	font-size: 1.4em;
+}
+#divider p {
+	color: black;
+	margin-left: 16rem;
+	margin-top: 13px;
+	padding-bottom: 13px;
+	word-wrap: break-word;
+	text-align: center;
+	width: 57%;
+	font-size: 1.2em;
+	font-style: italic;
+	margin-bottom: 2rem;
+}
+
+
+/*DESSERT SECTION*/
+	
+
+	
+.second_group{
+  display: flex;	
+}
+.row_2 figure{
+	width: 55%;
+	margin-left: 63px;
+}
+}	
+.second_group #brownie img{
+	margin-left: 1.5rem;
+	width: 119%;
+}
+.second_group #brownie p{
+	word-wrap: break-word;
+	text-align: justify;
+	width: 80%;
+	font-size: 1.0em;
+}
+.second_group #cake img{
+	padding-right: 2.0rem;
+	width: 125%;
+}
+#cake p{
+	word-wrap: break-word;
+	text-align: justify;
+	width: 110%;
+	font-size: 1.0em;
+}
+.second_group #musse img{
+	width: 77%;
+	padding-left: 3rem;
+}
+#musse p{
+	word-wrap: break-word;
+	text-align: justify;
+	width: 50%;
+	width: 77%;
+	padding-left: 34px;
+-size: 1.0em;
+	}	
+	
+
+/* ==========================================================================
+  Order Page for Desktop
+   ========================================================================== */
+
+	
+
+.hero-area_2 .container h1{
+	color: white;
+	font-family: 'DM Serif Display', serif;
+	font-size: 2.7em;
+	margin-top: 5rem;		/*margin-top: 94px;*/
+	text-align: center;
+	padding-top: 7rem;		/*padding-top: 85px;*/
+
+}
+.hero-area-p_2 {
+	padding-left: 9rem;
+	padding-top: 0.3rem;
+	text-align: center;
+	min-height: 15rem;						/*min-height: 240px;*/
+	word-break: break-all;
+	width: 75%
+		
+}
+.hero-area-p_2{
+	margin-bottom: -86px;
+	font-size: 1.6em;
+	line-height: 29px;
+	padding-left: 7rem;
+	margin-bottom: 2rem;
+}
+/*
+.dishes{
+	display: flex;
+	flex-flow: row wrap;*/
+	/*align-items: center;*/
+	/*align-content: center;*/
+
+/*.dish-wrapper article, figure img{
+	margin-bottom: 45px;
+	width: 70%;*/
+.dish-wrapper{
+	display: flex;
+	flex-flow: row wrap;
+}
+/*
+.dish-wrapper .description {
+	color: black;
+	text-align: center;
+	font-family: 'Domine', serif;
+  /*font-family: 'Cormorant SC', serif;*/
+.row {
+	width: 25%;
+	padding-left:45px;
+}
+
+.dish-wrapper article figure img{
+	width: 79%;
+	padding-left:85px;
+}
+.description {
+	color: black;
+    font-size: 1.7em;
+	word-wrap: break-word;
+	width: 95%;
+	text-align: center;
+	line-height: 26px;
+	padding-left: 5rem;/*padding-left: 88px;*/
+}
+.description_2{
+	 font-size: 1.7em;
+	color: black;
+	word-wrap: break-word;
+	width: 115%;
+	text-align: center;
+	line-height: 26px;
+	padding-left: 5rem;/*padding-left: 88px;*/
+}
+.description_3{
+   font-size: 1.7em;
+	color: black;
+	line-height: 26px;
+	word-wrap: break-word;
+	width: 95%;
+	text-align: center;
+	padding-left: 7rem;/*padding-left: 98px;*/
+}
+.description_4{
+	font-size: 1.7em;
+	color: black;
+	word-wrap: break-word;
+	width: 125%;
+	text-align: center;
+	line-height: 26px;
+	padding-left: 1rem;/*padding-left: 88px;*/
+}
+.description_5{
+	color: black;
+    font-size: 1.7em;
+	line-height: 26px;
+	width: 94%;
+	text-align: center;
+	
+}
+	
+
+.description_6{
+	color: black;
+    font-size: 1.7em;
+	line-height: 26px;
+	width: 74%;
+	text-align: center;
+	
+}
+	
+/* ==========================================================================
+  About Page for Desktop
+   ========================================================================== */
+
+#top-chef article{
+	display: flex;
+	flex-flow: row nowrap;
+	/*justify-content: space-between;*/
+	/*This prevented the biography from moving over even if I used margins and paddings*/
+	
+	
+	
+}
+#top-chef article figure,
+#top-chef article div  {
+	width: 52%;
+}
+	
+/*.top-chef_row img h1 p{
+	padding-left: 45rem;	
+}*/
+	
+}
+#top-chef h1{
+	font-size: 1.6em;
+	margin-right: 0.1rem;
+	text-align: center;
+	
+}
+#top-chef h2{
+	font-size:3rem;
+}	
+#top-chef img{
+	width: 85%;
+	margin-left: 2rem;
+}
+	
+ #top-chef .biography h1{
+	color: darkorange;
+	font-size: 2.8em;
+	margin-right: 2.5px;
+	margin-top: 13rem;
+	margin-bottom: 1.0rem;
+	
+} 	
+	
+.biography p{
+	color: black;
+	text-align: justify;
+	word-wrap: break-word;
+	width: 111%;
+	font-family: 'Cormorant SC', serif;
+	font-size: 2em;
+	margin-top: 5rem;
+	line-height: 32px;
+	
+	
+}
+#listings h2{
+	font-size: 2.4em;
+	padding-left: 2rem;
+}	
+#top-chef, .listings p{
+	color: black;
+
+	
+}
+.info-on-chefs {
+	display: flex;
+	
+}
+.row_3 {
+	display: flex;
+}
+.executive-chef img, .station-chef img,
+.pastry-chef img{
+	width:25%;
+}
+.executive-chef strong h3{
+	padding-right: 23px;	
+}	
+.executive-chef p{
+	font-size: 1.1em;
+	flex-basis: 3px;
+	width: 26%
+}
+.station-chef strong h3{
+	padding-right: 23px;	
+}	
+	
+.station-chef p{
+	font-size: 1.1em;
+	flex-basis: 3px;
+	width: 26%
+}
+.pastry-chef strong h3{
+	padding-right: 33px;	
+}	
+.pastry-chef p{
+	font-size: 1.1em;
+	text-align: left;
+	flex-basis: 3px;
+	width: 26%
+}	
+	
+	
+/* ==========================================================================
+  Resservation(s) Page for Desktop
+   ========================================================================== */
 	
 	
 
+.type_bar{
+	margin-top: -10rem;
+	margin-right: 12rem;
+}
+.type_bar_2{
+	margin-top: -4rem;
+	margin-left: 17rem;
+}
+	
+		
+	
+	
+/* ==========================================================================
+  Faq Page for Desktop
+   ========================================================================== */	
+	
+	
+.box_2{
+	background: white;
+	margin-left:55px;
+	margin-right: 55px;
+	padding-bottom: 8rem;							/*padding-bottom: 99px;*/
+}
+.box_container_2 h1{
+	font-family: 'Viaoda Libre', cursive;
+	padding-top: 54px;
+	text-align: center;
+	font-size: 3em;
+}
+.box_container_2 h2{
+	font-size: 1.6em;
+	line-height: 23px;
+	margin-left: 41px;
+	padding-left: 6rem;
+	text-align: justify;
+	text-align: center;
+	word-wrap: break-word;
+	width: 65%;
+}
+.box_container_2 h4{
+	color: darkolivegreen;
+	line-height: 22px;
+	margin-left: 8rem;
+	word-wrap: break-word;
+	width: 69%;
+	weight: 100;
+	font-family: 'Domine', serif;
+	font-size: 1.5em;
+}
+.box_container_2 p{
+	color: darkslategray;
+	line-height: 26px;
+	text-align: left;
+	text-align: justify;
+	margin-left: 8rem;
+	word-wrap: break-word;
+	width: 78%;
+	font-size: 1.7em;
+	  font-family: 'Cormorant SC', serif;
+}
 
 
+	
+	
+	
+	
+	
+/* ==========================================================================
+  Contact Page For Desktop
+   ========================================================================== */
+
+	
+.contact_page {
+	background: url("img/wood.png");
+	 background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 2px;
+	padding-bottom: 95px;
+}
+#right_wall{
+	background: url("img/background2 - Copy.png");
+	
+}
+.border-wrapper{
+	background: white;
+	padding-bottom: 88px;
+	margin-left: 35rem;
+	margin-right: 7rem;
+	margin-top: 48px;
+}
+.border h2 {
+	color: darkorange;
+	padding-top: 33px;
+	margin-left: 16px;
+	
+}
+.border p{
+    text-transform: uppercase;
+	text-align: center;
+	font-size: 26px;
+	margin-bottom: 20px;
+	color: #486255;
+    border-radius: 5px;
+    padding: 20px;
+	top: 45px;
+}
+.input{
+	width: 63%;
+	padding: 10px;
+	margin-bottom: 24px;
+	margin-left: 64px;
+	
+	/*margin bottom gives boxes spaces underneath each other.*/
+	
+}
+.msg{
+	padding-top: 15px;
+	padding-right: 45px;
+	padding-left: 65px;
+	height: 20px;
+	width: 94%;
+}
+.area{
+	height: 44rem; /*height:200px;*/
+	
+}
+textarea{
+	padding: 45px;
+	height: 25px;
+	margin-right: 40px;
+	width: 48%;
+}
+#btn{
+	width: 55%;
+	background: #486255;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	text-transform: uppercase;
+	margin: -60px 60px;
+	margin-top: 9rem;/*margin-top: 125px;*/
+	margin-left: 89px;
+	cursor: pointer;
+	border-radius: 5px;	
+}
+#btn:hover,
+#btn:active{
+    background-color: green;
+}
+
+
+	
+	
+	
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
