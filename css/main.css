@@ -234,6 +234,7 @@ footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
+	cursor: pointer;
 }
 
 footer .social-icons p {
@@ -275,30 +276,27 @@ header li:active{
 	background-repeat: no-repeat;
 	background-position: center;	
 	background-size: cover;
-	min-height: 490px;
+	min-height: 50%;
 	/*padding-top: 58px;* I had a white space b/w the nav and picture. so I had this, but now with the min-height it makes the picture show its entirty and closes the white gap*/
 
   	display: flex;
   	justify-content: center;
   	flex-flow: row wrap;	
 }
-.overlay h1{
+
+.overlay h1 {
 	color: white;
 	font-family: 'DM Serif Display', serif;
-	font-size: 2em;
-	margin-top: 74px;
+	font-size: 2rem;
+	padding-left: 0.2em;
 	text-align: center;
-	padding-left: 38px;
 }
-.overlay{
+
+.overlay {
 	background: rgba(0, 0, 0, 0.5);
 	background-size: cover;
-	/*position: absolute;* it was preventing the overlay from staying inplace*/
-	/*top: 43;
-	left: 0;*/
 	/*min-height: 490px;*/
-	width: 100%;
-	
+	width: 100%;	
 }
 
 .btn {
@@ -311,7 +309,7 @@ header li:active{
 	/*padding is the hight or how big something will be such as - the buttons height*/
 	/*the margins help put a space between the two buttons*/
 }
-.btn-full{
+.btn-full {
 	background-color: #e67e22;
 	border-radius: 200px;
 	color: #fff;
@@ -319,14 +317,15 @@ header li:active{
 	
 }
 
- .btn-ghost{
+ .btn-ghost {
 	border: 1px solid #FF6500;
 	border-radius: 200px;
 	color: darkorange;
 	left: 35%;
 }
+
 .btn:hover,
-.btn:active{
+.btn:active {
     background-color: #EB4600;
 }
 /*border-radius means making the button or a shape rounder around the edges
@@ -337,23 +336,26 @@ btn-ghost means see throught button: example- second button*/
 	margin-left: 30px;
 	margin-top: 34px;
 }
+
 .overlay .hero-area-p {
 	color: white;
 	font-family: 'Mate SC', serif;
 	font-style: italic;
 	font-size: 1.3em;
 	line-height: 1.2em;
-	margin-top: 34px;
 	margin-left: 45px;
+	min-height: 15rem;
 	text-align: center;
 	word-wrap: break-word;
 	width: 78%;
 }
+
 .entrees_section {
 	display: flex;
+	flex-flow: row wrap;
   	justify-content: center;
-  	flex-flow: row wrap;
 }
+
 .entrees_section h2 u{
 	padding-top: 34px;
 	padding-left: 34px;
@@ -361,7 +363,9 @@ btn-ghost means see throught button: example- second button*/
 
 
 /*ENTREES SECTION*/
-.container-wrapper,  u, h2{
+
+
+.container-wrapper,  u, h2 {
 	color: darkorange;
 	font-family: 'DM Serif Display', serif;
 	font-style: italic;
@@ -371,14 +375,16 @@ btn-ghost means see throught button: example- second button*/
   	margin: 30px 20px;
 	
 }
-.container-wrapper p{
+
+.container-wrapper p {
 	color: black;
 	margin-left: 30px;
 	margin-top: 13px;
-	word-wrap: break-word;
 	text-align: center;
+	word-wrap: break-word;
 	width: 87%;
 }
+
 .first_group article h3 {
 	color:  black;
 	font-family: 'Viaoda Libre', cursive;
@@ -386,61 +392,78 @@ btn-ghost means see throught button: example- second button*/
 	text-align: center;
 	/*text-decoration: underline;*/
 }
+
 .first_group article p{
 	color: dimgrey;
+	font-family: 'Domine', serif;
 	margin-bottom: 45px;
 	margin-left: 30px;
-	word-wrap: break-word;
 	text-align: center;
-	width: 87%;
-	font-family: 'Domine', serif;
+	word-wrap: break-word;
+	width: 89%;
 
 }
-
 
 
 /*APPETIZER SECTION*/
 
+
 .appetizer {
 	background-image: url("img/appetizer.png");
-	background-size: cover;
 	background-repeat: no-repeat;
-	min-height: 199px;
+	background-size: cover;
+	min-height: 18em;
 	width: 100%;
 }
-.appetizer .wrapper h2 {
-	color: white;
-}
-.wrapper p {
-	color: white;
-	text-align: center;
-	padding-left: 28px;
-	padding-top: 14px;
-	
-}
-#divider h2{
-	text-align: center;
-	padding-left: 45px;
-	word-wrap: 45px;
-	width: 80%;
-	margin-top: 2rem;
-}
-#divider p {
-	color: black;
-	margin-left: 33px;
-	margin-top: 13px;
-	word-wrap: break-word;
-	text-align: center;
-	width: 85%;
-	margin-bottom: 3rem;
-}
+
 .overlay_2 {
 	height: 14px;
 	max-width: 100%;
-	min-height: 201px;
-	background: rgba(0, 0, 0, 0.6);
+	min-height: 18rem;
+	background: rgba(0, 0, 0, 0.4);
 	background-size: cover;
 	position: absolute;
+}
+
+.appetizer .wrapper h2 {
+	color: white;
+	margin-top: 2rem;
+	padding-left: 1.4rem;
+}
+
+.wrapper p {
+	color: white;
+	font-size: 1.3rem;
+	line-height: 1.3rem;
+	text-align: center;
+	padding-left: 3rem;
+	padding-right: 18rem;
+	word-wrap: break-word;
+	width: 77%;
+	
+}
+
+
+/*DESSERT SECTION*/
+
+
+#dessert-divider h2{
+	margin-top: 2rem;
+	padding-left: 45px;
+	text-align: center;
+	word-wrap: 45px;
+	width: 80%;
+}
+
+#dessert-divider p {
+	color: black;
+	font-size: 1.3em;
+	margin-left: 39px;
+	margin-top: 13px;
+	word-wrap: break-word;
+	text-align: center;
+	width: 78%;
+	margin-bottom: 3rem;
 }
 
 .second_group h2 {
@@ -450,7 +473,8 @@ btn-ghost means see throught button: example- second button*/
 	padding-top: 34px;
 	padding-left: 14px;
 }
-.second_group h3{
+
+.second_group h3 {
 	color: black;
 	font-family: 'Viaoda Libre', cursive;
 	font-size: 1.5em;
@@ -458,30 +482,150 @@ btn-ghost means see throught button: example- second button*/
 }
 .second_group p {
 	color: dimgrey;
+	font-family: 'Domine', serif;
+	font-size: 18px;
 	margin-bottom: 45px;
 	padding-left: 55px;
 	text-align: center;
-	font-size: 18px;
 	word-wrap: break-word; 
 	width: 72%;
-	font-family: 'Domine', serif;
 }
+
 #cake p{
-	font-size: 18px;
-	word-wrap: break-word; 
-	width: 92%;
-	padding-left: 25px;
 	font-family: 'Domine', serif;
+	font-size: 18px;
+	padding-left: 45px;
+	word-wrap: break-word; 
+	width: 82%;
 }
-.price{
-	color: black;
+
+
+
+
+/* ==========================================================================
+  Order Page
+   ========================================================================== */
+
+.hero-area_2 {
+	background-image: url("img/cover (2).png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-flow: row wrap;
+  	justify-content: center;
+	min-height: 10rem;
+}
+
+.hero-area_2 .container {
+	background-size: cover;	
+	background-position: center;
+	padding-top:-5rem; /*margin-top: -94px;*/ 		
+}
+
+.container #overlay{
+	background: rgba(0, 0, 0, 0.5);
+	background-size: cover;
+	/*position: absolute;*/
+	 position: relative;
+	/*min-height: 90px;*/
+	width: 100%;
+	padding-bottom: 2px;
+	
+	
+	
+}
+.hero-area_2 .container h1{
+	color: white;
+	font-family: 'DM Serif Display', serif;
+	font-size: 2em;
+	margin-top: 0.1rem;		/*margin-top: 94px;*/
 	text-align: center;
+	padding-top: 7rem;		/*padding-top: 85px;*/
+
 }
+.hero-area-p_2 {
+	font-size: 1.4rem;
+	padding-left:62px;
+	line-height: 1.4rem;
+	min-height: 15rem;						/*min-height: 240px;*/
+	margin-bottom: -86px;
+	text-align: center;
+	word-break: break-all;
+	width: 75%;
+}
+
+.dishes{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	align-content: center;
+}
+
+.dish-wrapper article, figure img{
+	margin-bottom: 45px;
+	width: 70%;
+}
+
+.dish-wrapper .description {
+	color: black;
+	font-family: 'Domine', serif;
+	text-align: center;
+	padding-right: 12px;
+  /*font-family: 'Cormorant SC', serif;*/
+}
+
+/*
+.dish-wrapper article figure img{
+	width: 55%;
+	padding-left: 85px;
+}*/
+
+.second_group p{
+	font-size: 1.5em;
+	width: 85%;
+}
+.row{
+	width: 82%;
+}
+.description {
+	color: black;
+    font-size: 1.2em;
+	word-wrap: break-word;
+	width: 65%;
+	text-align: center;
+	line-height: 16px;
+}
+
+.description_3 {
+	padding-right: 7rem;
+}
+
+
+.description_4 {
+	padding-right: 2rem;
+}
+
+.description_5 {
+	padding-left: 2rem;
+}
+
+.description_6 {
+	padding-left: 4rem;
+}
+
+.price {
+	color: black;
+	font-size: 1.5em;
+	padding-left: 10rem;
+}
+
+
 
 
 /* ==========================================================================
   About Page
    ========================================================================== */
+
 
 
 
@@ -573,102 +717,11 @@ btn-ghost means see throught button: example- second button*/
 	word-wrap: break-word;
 	width: 94%;
 }
-/* ==========================================================================
-  Order Page
-   ========================================================================== */
-
-.hero-area_2{
-	display: flex;
-  	justify-content: center;
-  	flex-flow: row wrap;
-	background-image: url("img/cover (2).png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	
-}
-.hero-area_2 .container {
-background-position: center;
-padding-top:-5rem; /*margin-top: -94px;*/
-background-size: cover;
-
-			
-  		
-}
- .container #overlay{
-	background: rgba(0, 0, 0, 0.5);
-	background-size: cover;
-	/*position: absolute;*/
-	 position: relative;
-	/*min-height: 90px;*/
-	width: 100%;
-	padding-bottom: 2px;
-	
-	
-	
-}
-.hero-area_2 .container h1{
-	color: white;
-	font-family: 'DM Serif Display', serif;
-	font-size: 2em;
-	margin-top: 5rem;		/*margin-top: 94px;*/
-	text-align: center;
-	padding-top: 7rem;		/*padding-top: 85px;*/
-
-}
-.hero-area-p_2 {
-	padding-left:62px;
-	/*padding-top: -77px;*/
-	text-align: center;
-	min-height: 15rem;						/*min-height: 240px;*/
-	word-break: break-all;
-	width: 75%;
-	margin-bottom: -86px;
-}
-
-.dishes{
-	display: flex;
-	flex-flow: row wrap;
-	align-items: center;
-	align-content: center;
-}
-/*.dish-wrapper article, figure img{
-	margin-bottom: 45px;
-	width: 70%;*/
-
-.dish-wrapper .description {
-	color: black;
-	text-align: center;
-	font-family: 'Domine', serif;
-  /*font-family: 'Cormorant SC', serif;*/
-}
-
-/*
-.dish-wrapper article figure img{
-	width: 55%;
-	padding-left: 85px;
-}*/
-
-.second_group p{
-	font-size: 1.5em;
-	width: 85%;
-}
-.row{
-	width: 82%;
-}
-.description {
-	color: black;
-    font-size: 1.2em;
-	word-wrap: break-word;
-	width: 65%;
-	text-align: center;
-	line-height: 16px;
-	padding-left: 5rem;/*padding-left: 88px;*/
-}
 
 
-.price{
-	font-size: 1.3em;
-}
+
+
+
 /* ==========================================================================
   Reservations Page
    ========================================================================== */
@@ -753,9 +806,15 @@ background-size: cover;
 	margin-left: 17rem;
 }
 
+
+
+
 /* ==========================================================================
   Employment Page
    ========================================================================== */
+
+
+
 
 .job_applications {
 	background:url("img/job_pic.png");
@@ -765,13 +824,15 @@ background-size: cover;
 	
 }
 .job_applications .box {
-	margin-bottom: -10rem;
+	
+	/*margin-bottom: -10rem;*/
+	/*this prevented the background to frame underneath the box*/
 }
 .box{
 	background: white;
 	margin-left:25px;
 	margin-right: 25px;
-	padding-bottom: 5rem;
+	padding-bottom: 10rem;
 	
 }
 
@@ -961,19 +1022,19 @@ hr{
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding-top: 2px;
-	padding-bottom: 95px;
+	padding-bottom: 12rem;
 }
 .border-wrapper{
 	background: white;
-	padding-bottom: 88px;
-	margin-left: 54px;
-	margin-right: 45px;
-	margin-top: 48px;
+	padding-bottom: 5rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+	margin-top: 5rem;
 }
 .border h2 {
 	color: darkorange;
-	padding-top: 33px;
-	margin-left: 16px;
+	padding-top: 5em;
+	margin-left: 17em;
 	
 }
 .border p{
@@ -1007,8 +1068,8 @@ hr{
 	
 }
 textarea{
-	padding: 45px;
-	height: 25px;
+	padding: 5rem;
+	height: 5rem;
 	margin-right: 40px;
 	width: 48%;
 }
@@ -1129,19 +1190,23 @@ textarea{
 .container h1{
 	font-size: 2.7em;	
 }	
+	
 .container{
 	display: flex;
 		
-	}	
+}	
+	
 .btn-full, .btn-ghost{
 	margin-left: 8rem;	
 
 }
+	
 .hero-area-p{
 	padding-left: 3rem;
-	font-size: 1.8em;
+	font-size: 1.9rem;
 }
 
+	
 /*Hero section ends here*/	
 	
 	
@@ -1155,32 +1220,78 @@ textarea{
 	font-size: 1.00em;
 	padding-left: 1rem;
 }
+
 	
+
+.appetizer {
+	background-image: url("img/appetizer.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 18em;
+	width: 100%;
+}
+
+.overlay_2 {
+	height: 14px;
+	max-width: 100%;
+	min-height: 18rem;
+	background: rgba(0, 0, 0, 0.4);
+	background-size: cover;
+	position: absolute;
+}
+
+.appetizer .wrapper h2 {
+	color: white;
+	margin-top: 2rem;
+	padding-left: 1.4rem;
+}
+
+.wrapper p {
+	color: white;
+	font-size: 1.8rem;
+	line-height: 1.8rem;
+	text-align: center;
+	padding-left: 3rem;
+	padding-right: 18rem;
+	word-wrap: break-word;
+	width: 87%;
 	
-/*First group ends here*/	
+}
+
+
+/*DESSERT SECTION*/	
 	
 	
  .wrapper #divider h2{
 	font-size: 2.4em;
 	text-decoration: underline;
 }
+	
  .wrapper, #divider p{
 	font-size: 1.3em;
-	 padding-right: 17px;
+     padding-right: 17px;
 	
 }
 	
 	
 /*Divider ends here*/		
 	
-	
+
+.second_group img {
+	padding-right: 23rem;
+	width: 100%;	
+}	
 .second_group, .row_2 h3{
-	font-size: 1.2em;
+	font-size: 1.4em;
 }
-.second_group .row_2 p{
+	
+.second_group, .row_2 p{
 	font-size: 1.2em;
 	padding-left: 1rem;
-  font-family: 'Domine', serif;
+    font-family: 'Domine', serif;
+	word-wrap: break-word;
+	width: 85%;
+	
 
 }
 #brownie, #cake, #musse p{
@@ -1214,7 +1325,7 @@ textarea{
 
 }
 .hero-area-p_2 {
-	padding-left:7rem;
+	padding-left: 5rem;
 	padding-top: 1.0rem;
 	text-align: center;
 	min-height: 15rem;						/*min-height: 240px;*/
@@ -1229,17 +1340,13 @@ textarea{
 .dishes{
 	display: flex;
 	flex-flow: row wrap;
-	/*align-items: center;*/
-	/*align-content: center;*/
 }
-/*.dish-wrapper article, figure img{
-	margin-bottom: 45px;
-	width: 70%;*/
-.dish-wrapper{
+
+.dish-wrapper .row{
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-around;
 }
+	
 /*
 .dish-wrapper .description {
 	color: black;
@@ -1247,19 +1354,19 @@ textarea{
 	font-family: 'Domine', serif;
   /*font-family: 'Cormorant SC', serif;*/
 .row {
-	width: 35%;
-	padding-left:55px;
+	width: 15%;
+	padding-left:35px;
 }
 
-.dish-wrapper article figure img{
-	width: 79%;
-	padding-left: 0.5rem;
+.dishes, article figure img{
+	width: 10%;
+	padding-left: 0.1rem;
 }
 .description {
 	color: black;
     font-size: 2.0em;
 	word-wrap: break-word;
-	width: 95%;
+	width:125%;
 	text-align: center;
 	line-height: 26px;
 	padding-left: 2rem;/*padding-left: 88px;*/
@@ -1271,7 +1378,6 @@ textarea{
 	width: 115%;
 	text-align: center;
 	line-height: 26px;
-	padding-left: 5rem;/*padding-left: 88px;*/
 }
 .description_3{
    font-size: 2.0em;
@@ -1280,7 +1386,7 @@ textarea{
 	word-wrap: break-word;
 	width: 125%;
 	text-align: center;
-	padding-left: 7rem;/*padding-left: 98px;*/
+	padding-left: 3rem;/*padding-left: 98px;*/
 }
 .description_4{
 	font-size: 2.0em;
@@ -1289,8 +1395,8 @@ textarea{
 	width: 125%;
 	text-align: center;
 	line-height: 26px;
-	padding-left: 5rem;/*padding-left: 88px;*/
 }
+	
 .description_5{
 	color: black;
     font-size: 2.0em;
@@ -1307,116 +1413,6 @@ textarea{
 }
 	
 	
-/* ==========================================================================
-  About Page for Tablet
-   ========================================================================== */
-
-#top-chef h1{
-	font-size: 3em;
-	margin-left: 14px;
-	text-align: center;
-}
-#top-chef img{
-	margin-top: 8rem;;
-	padding-left: 1rem;
-	width: 88%;
-}
-.biography p{
-	font-size: 1.9em;
-	color: black;
-	line-height: 1.6em;
-	margin-left: 28px;
-	text-align: center;
-	text-align: justify;
-	word-wrap: break-word;
-	width: 98%;
-	font-family: 'Cormorant SC', serif;
-	
-}
-#listings h2{
-	color: darkorange;
-	margin-left: 59px;
-	text-align: center;
-	font-size: 3em;
-	margin-bottom: 2.9rem;
-}
-#listings  ul, li{
-	color: black;
-	line-height: 79px;
-	padding-left: 2.4rem;
-	text-align: center;
-	font-family: 'Domine', serif;
-	font-size: 1.3em;
-}
-#top-chef, #listings p{
-	color: black;
-	margin-left: 34px;
-	text-align: center;
-	word-wrap: break-word;
-	width: 84%;
-
-}
-
-.parallax{
-	background: url("img/chef crew.png"); 
-	background-attachment: fixed;
-	background-size: cover;
-	height: 220px;
-	
-}
-.info-on-chefs{
-	display: flex;
-	flex-flow: row wrap;
-}
-.executive-chef img, .station-chef img, .pastry-chef img{
-	padding-left: 55px;
-	padding-right: 39px;
-	width: 85%;
-}
-.station-chef img{
-	width: 85%;
-}
-.pastry-chef img{
-	
-}
-.executive-chef h3 strong,
-.station-chef h3 strong, 
-.pastry-chef h3 strong{
-	font-size: 1.7em;
-	color: black;
-	text-align: center;
-	padding-left: 7rem;
-	/*margin-left: 185px; /*GET NITIN TO LOOKAT THIS*/
-	
-}
-.executive-chef p{
-	color: black;
-	margin-left: 76px;
-	word-wrap: break-word;
-	width: 76%;
-	text-align: center;
-	margin-bottom: 55px;
-	font-size: 1.8em;
-}
-.station-chef p{
-	color: black;
-	word-wrap: break-word;
-	width: 78%;
-	margin-left: 74px;
-	text-align: center;
-	margin-bottom: 55px;
-	font-size: 1.8em;
-}
-.pastry-chef p{
-	color: black;
-	word-wrap: break-word;
-	text-align: center;
-	margin-left: 58px;
-	font-size: 1.8em;
-	width: 80%;
-}
-
-
 
 /* ==========================================================================
   FAQ Page For Tablet
@@ -1527,6 +1523,7 @@ textarea{
 }
 .info-on-chefs{
 	display: flex;
+	flex-direction: column;
 }
 .executive-chef img, .station-chef img, .pastry-chef img{
 	padding-left: 83px;
@@ -1569,6 +1566,24 @@ textarea{
 	font-size: 1.8em;
 }
 
+	
+	
+	
+	
+	
+		
+}
+.info-on-chefs {
+	display: flex;
+	flex-direction: row;
+	
+}
+.row_3 {
+	display: flex;
+}
+
+	
+	
 
 /* ==========================================================================
   Reservation Page For Tablet
@@ -1639,8 +1654,44 @@ textarea{
 	margin-left: 17rem;
 	}	
 
+	
 
+	
+/* ==========================================================================
+ Employment Page for Tablet
+   ========================================================================== */	
+	
+.box, .box-container .first-job p {
+	padding-left: 6rem;	
+}
 
+.box-container, .First-job h3{
+	padding-right: 7rem;	
+}
+	
+.box-container, .First-job li{
+	padding-right: 7rem;	
+}
+
+.box-container, .Second-job h3{
+	padding-right: 7rem;	
+}
+		
+.box-container, .Second-job li{
+	padding-right: 7rem;	
+}
+	
+	
+.box-container, .Third-job h3{
+	padding-right: 7rem;	
+}	
+.box-container, .Third-job li{
+	padding-right: 7rem;	
+}		
+
+	
+	
+	
 /* ==========================================================================
   Contact Page For Tablet
    ========================================================================== */
@@ -1932,7 +1983,6 @@ btn-ghost means see throught button: example- second button*/
 	width: 57%;
 	font-size: 1.2em;
 	font-style: italic;
-	margin-bottom: 2rem;
 }
 
 
@@ -1949,7 +1999,6 @@ btn-ghost means see throught button: example- second button*/
 }
 }	
 .second_group #brownie img{
-	margin-left: 1.5rem;
 	width: 119%;
 }
 .second_group #brownie p{
@@ -1969,8 +2018,7 @@ btn-ghost means see throught button: example- second button*/
 	font-size: 1.0em;
 }
 .second_group #musse img{
-	width: 77%;
-	padding-left: 3rem;
+	width: 100%;
 }
 #musse p{
 	word-wrap: break-word;
@@ -1991,27 +2039,26 @@ btn-ghost means see throught button: example- second button*/
 .hero-area_2 .container h1{
 	color: white;
 	font-family: 'DM Serif Display', serif;
-	font-size: 2.7em;
-	margin-top: 5rem;		/*margin-top: 94px;*/
+	font-size: 2.1em;		
 	text-align: center;
-	padding-top: 7rem;		/*padding-top: 85px;*/
+	padding-top: 5rem;		
+	padding-bottom: 1.2rem;
 
 }
 .hero-area-p_2 {
 	padding-left: 9rem;
 	padding-top: 0.3rem;
 	text-align: center;
-	min-height: 15rem;						/*min-height: 240px;*/
+	min-height: 15rem;						
 	word-break: break-all;
-	width: 75%
+	width: 75%;
 		
 }
 .hero-area-p_2{
-	margin-bottom: -86px;
+	margin-bottom: 0.1em;
 	font-size: 1.6em;
 	line-height: 29px;
-	padding-left: 7rem;
-	margin-bottom: 2rem;
+	padding-left: 4rem;
 }
 /*
 .dishes{
@@ -2058,7 +2105,6 @@ btn-ghost means see throught button: example- second button*/
 	width: 115%;
 	text-align: center;
 	line-height: 26px;
-	padding-left: 5rem;/*padding-left: 88px;*/
 }
 .description_3{
    font-size: 1.7em;
@@ -2131,13 +2177,13 @@ btn-ghost means see throught button: example- second button*/
 }	
 #top-chef img{
 	width: 85%;
-	margin-left: 2rem;
+	margin-left: 0.2rem;
 }
 	
  #top-chef .biography h1{
 	color: darkorange;
-	font-size: 2.8em;
-	margin-right: 2.5px;
+	font-size: 1.8em;
+	margin-right: 1.2px;
 	margin-top: 13rem;
 	margin-bottom: 1.0rem;
 	
@@ -2149,10 +2195,10 @@ btn-ghost means see throught button: example- second button*/
 	word-wrap: break-word;
 	width: 111%;
 	font-family: 'Cormorant SC', serif;
-	font-size: 2em;
-	margin-top: 5rem;
-	line-height: 32px;
-	
+	font-size: 1.2em;
+	margin-top: 1,2rem;
+	line-height: 22px;
+	margin-left: 0.3rem;
 	
 }
 #listings h2{
@@ -2166,6 +2212,7 @@ btn-ghost means see throught button: example- second button*/
 }
 .info-on-chefs {
 	display: flex;
+	flex-direction: row;
 	
 }
 .row_3 {
@@ -2173,38 +2220,40 @@ btn-ghost means see throught button: example- second button*/
 }
 .executive-chef img, .station-chef img,
 .pastry-chef img{
-	width:25%;
+	width: 58%;
+	padding-right: 7rem;
+	padding-left: 12rem;
 }
 .executive-chef strong h3{
-	padding-right: 23px;	
+	padding-right: 20px;	
 }	
 .executive-chef p{
-	font-size: 1.1em;
+	font-size: 1.5em;
 	flex-basis: 3px;
-	width: 26%
+	width: 71%
 }
 .station-chef strong h3{
 	padding-right: 23px;	
 }	
 	
 .station-chef p{
-	font-size: 1.1em;
+	font-size: 1.5em;
 	flex-basis: 3px;
-	width: 26%
+	width: 71%
 }
 .pastry-chef strong h3{
-	padding-right: 33px;	
+	padding-right: 23px;	
 }	
 .pastry-chef p{
-	font-size: 1.1em;
+	font-size: 1.5em;
 	text-align: left;
 	flex-basis: 3px;
-	width: 26%
+	width: 71%
 }	
 	
 	
 /* ==========================================================================
-  Resservation(s) Page for Desktop
+  Reservation(s) Page for Desktop
    ========================================================================== */
 	
 	
@@ -2271,6 +2320,36 @@ btn-ghost means see throught button: example- second button*/
 }
 
 
+
+
+/* ==========================================================================
+ Employment Page for Desktop
+   ========================================================================== */	
+	
+
+.box-container, .First-job .Second-job .Third-job .btn-resume{
+	width: 40%;
+	background: #486255;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	text-transform: uppercase;
+	margin: 25px 0px 0px 12px;
+	cursor: pointer;
+	border-radius: 5px;	
+    position: absolute;
+  	margin-left: 9rem;
+}
+ .btn-resume:hover,
+.btn-resume:active{
+    background-color: green;
+	padding-left: 34px;
+}
+hr{
+	width: 100%;
+	margin-left: -1px;
+}
 	
 	
 	
