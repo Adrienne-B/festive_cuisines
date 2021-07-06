@@ -289,6 +289,7 @@ header li:active{
 	font-family: 'DM Serif Display', serif;
 	font-size: 2rem;
 	padding-left: 0.2em;
+	margin-top: 7rem;
 	text-align: center;
 }
 
@@ -448,16 +449,21 @@ btn-ghost means see throught button: example- second button*/
 
 
 #dessert-divider h2 {
-	margin-top: 2rem;
+	font-size: 1.7em;
+	margin-top: 1.0em;
 	padding-left: 45px;
 	text-align: center;
+	text-decoration: underline;
 	word-wrap: 45px;
 	width: 80%;
 }
 
 #dessert-divider p {
 	color: black;
-	font-size: 1.3em;
+	font-size: 1.2em;
+	font-style: italic;
+	font-size: 1.2rem;
+	line-height: 1.4rem;
 	margin-left: 39px;
 	margin-top: 13px;
 	word-wrap: break-word;
@@ -469,7 +475,6 @@ btn-ghost means see throught button: example- second button*/
 .second_group h2 {
 	font-size: 1.5em;
 	text-align: center;
-	text-decoration: underline;
 	padding-top: 34px;
 	padding-left: 14px;
 }
@@ -488,7 +493,7 @@ btn-ghost means see throught button: example- second button*/
 	padding-left: 55px;
 	text-align: center;
 	word-wrap: break-word; 
-	width: 72%;
+	width: 87%;
 }
 
 #cake p{
@@ -800,9 +805,9 @@ btn-ghost means see throught button: example- second button*/
 }
 
 .area_2 {
-	padding-bottom: 0.19rem;
+	padding-bottom: 0.2rem;
 	padding-right: 0.1rem;
-	padding-top: 0.9rem
+	padding-top: 1.2rem
 }
 
 .type_bar {
@@ -1006,9 +1011,8 @@ hr{
 	font-size: 1.5em;
 	line-height: 23px;
 	padding-bottom: 30px;
-	padding-left: 2px;
-	padding-right: 4rem;
-	text-align: justify;
+	padding-left: 2.4rem;
+	text-align: center;;
 	word-wrap: break-word;
 	width: 75%;
 }
@@ -1096,9 +1100,9 @@ hr{
 }
 
 textarea {
-	height: 5rem;
+	height: 1rem;
 	margin-right: 40px;
-	padding: 5rem;
+	padding: 3rem;
 	width: 48%;
 }
 
@@ -1644,6 +1648,7 @@ textarea {
 	/*background-color: #e67e22;*/
 	border: 2px solid #FF6500;
 	border-radius: 200px;
+	cursor: pointer;
 	color: #fff;
 	display: inline-block; /*what is this for I may deleteit?*/
 
@@ -1926,8 +1931,9 @@ btn-ghost means see throught button: example- second button*/
 	color: darkorange;
 	font-family: 'DM Serif Display', serif;
 	font-style: italic;
-	font-size: 1.4em;
-	margin: 30px 20px;
+	font-size: 1.1em;
+	line-height: 1.3rem;
+	margin: 7px 20px 20px;
 	padding-top: 2rem;
 	text-align: center;
 	width: 90%;
@@ -1937,7 +1943,8 @@ btn-ghost means see throught button: example- second button*/
 	color: black;
 	font-size: 1.2em;
 	margin-left: 4rem;
-	margin-top: 13px;
+	margin-top: 7px;
+	margin-bottom: 5rem;
 	text-align: center;
 	word-wrap: break-word;
 	width: 87%;
@@ -1970,7 +1977,7 @@ btn-ghost means see throught button: example- second button*/
 	
 .first_group article p {
 	color: dimgrey;
-	font-size: 1.0em;
+	font-size: 1.0rem;
 	margin-bottom: 45px;
 	margin-left: 30px;
 	word-wrap: break-word;
@@ -2004,7 +2011,7 @@ btn-ghost means see throught button: example- second button*/
 	
 .wrapper p {
 	color: white;
-	font-size: 1.2em;
+	font-size: 1.2rem;
 	margin-left: 14rem;
 	margin-top: 13px;
 	word-wrap: break-word;
@@ -2080,7 +2087,7 @@ btn-ghost means see throught button: example- second button*/
 }
 
 .second_group #brownie p {
-	font-size: 1.0em;
+	font-size: 1.0rem;
 	text-align: justify;
 	word-wrap: break-word;
 	width: 80%;
@@ -2092,7 +2099,7 @@ btn-ghost means see throught button: example- second button*/
 }
 
 #cake p {
-	font-size: 1.0em;
+	font-size: 1.0rem;
 	text-align: justify;
 	width: 110%;
 	word-wrap: break-word;
@@ -2104,7 +2111,7 @@ btn-ghost means see throught button: example- second button*/
 
 #musse p {
 	padding-left: 34px;
-    size: 1.0em;
+    font-size: 1.0rem;
 	text-align: justify;
 	word-wrap: break-word;
 	width: 50%;
@@ -2261,7 +2268,7 @@ btn-ghost means see throught button: example- second button*/
 	color: darkorange;
 	font-size: 1.2em;
 	margin-right: 1.2px;
-	margin-top: 13rem;
+	margin-top: 10rem;
 	margin-bottom: 1.0rem;
 	
 } 	
@@ -2278,14 +2285,20 @@ btn-ghost means see throught button: example- second button*/
 	width: 85%;	
 }
 
-#listings h2{
-	font-size: 2.4em;
-	padding-left: 2rem;
+#listings {
+	padding-left: 7em;		
 }
 	
-#top-chef .listings p{
+#listings h2{
+	font-size: 1.5em;
+	padding-left: 0.2rem;
+}
+		
+ #listings ul  li {
 	color: black;
-	font-size: 3rem;	
+	font-size: 0.9rem;	
+	line-height: 1.5rem;
+	 
 }
 	
 .info-on-chefs {
@@ -2393,8 +2406,7 @@ btn-ghost means see throught button: example- second button*/
 .box_container_2 h2 {
 	font-size: 1.6em;
 	line-height: 23px;
-	margin-left: 41px;
-	padding-left: 6rem;
+
 	text-align: justify;
 	text-align: center;
 	word-wrap: break-word;
@@ -2404,7 +2416,7 @@ btn-ghost means see throught button: example- second button*/
 .box_container_2 h4 {
 	color: darkolivegreen;
 	font-family: 'Domine', serif;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	line-height: 22px;
 	margin-left: 2rem;
 	word-wrap: break-word;
