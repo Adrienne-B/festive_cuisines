@@ -133,9 +133,9 @@ h2 {
 h3, 
 h4 {
   font-family: 'Cormorant SC', serif;	
-  font-weight: 500;
+  /*font-weight: 500;
   font-size: 1.125em;
-  margin: 20px 0;
+  margin: 20px 0;*/
 }
 h4{
 	color: darkorange;
@@ -356,7 +356,7 @@ btn-ghost means see throught button: example- second button*/
   	justify-content: center;
 }
 
-.entrees_section h2 u{
+.entrees_section h2 u {
 	padding-top: 34px;
 	padding-left: 34px;
 }
@@ -440,14 +440,13 @@ btn-ghost means see throught button: example- second button*/
 	padding-right: 18rem;
 	word-wrap: break-word;
 	width: 77%;
-	
 }
 
 
 /*DESSERT SECTION*/
 
 
-#dessert-divider h2{
+#dessert-divider h2 {
 	margin-top: 2rem;
 	padding-left: 45px;
 	text-align: center;
@@ -538,30 +537,30 @@ btn-ghost means see throught button: example- second button*/
 	color: white;
 	font-family: 'DM Serif Display', serif;
 	font-size: 2em;
-	margin-top: 0.1rem;		/*margin-top: 94px;*/
+	margin-top: 0.1rem;		
 	text-align: center;
-	padding-top: 7rem;		/*padding-top: 85px;*/
+	padding-top: 7rem;		
 
 }
 .hero-area-p_2 {
 	font-size: 1.4rem;
 	padding-left:62px;
 	line-height: 1.4rem;
-	min-height: 15rem;						/*min-height: 240px;*/
-	margin-bottom: -86px;
+	min-height: 15rem;						
+	margin-bottom: 3rem;
 	text-align: center;
 	word-break: break-all;
 	width: 75%;
 }
 
-.dishes{
-	display: flex;
-	flex-flow: row wrap;
+.dishes {
 	align-items: center;
 	align-content: center;
+	display: flex;
+	flex-flow: row wrap;
 }
 
-.dish-wrapper article, figure img{
+.dish-wrapper article, figure img {
 	margin-bottom: 45px;
 	width: 70%;
 }
@@ -580,7 +579,7 @@ btn-ghost means see throught button: example- second button*/
 	padding-left: 85px;
 }*/
 
-.second_group p{
+.second_group p {
 	font-size: 1.5em;
 	width: 85%;
 }
@@ -598,8 +597,7 @@ btn-ghost means see throught button: example- second button*/
 	line-height: 16px;
 }
 
-.description_3 {
-		
+.description_3 {	
 	padding-right: 7rem;
 }
 
@@ -723,7 +721,7 @@ btn-ghost means see throught button: example- second button*/
 .pastry-chef p { 
 	color: black;
 	text-align: center;
-	margin-left: 68px;
+	padding-left: 5rem;
 	word-wrap: break-word;
 	width: 70%;
 }
@@ -827,9 +825,9 @@ btn-ghost means see throught button: example- second button*/
 	padding-top: 4rem;
 	padding-bottom: 4rem;
 	
-}
+/*}
 
-.job_applications .box {
+.job_applications .box {*/
 	
 	/*margin-bottom: -10rem;*/
 	/*this prevented the background to frame underneath the box*/
@@ -865,10 +863,10 @@ h2,h4 {
 	text-align: center;
 }
 
-.First-job p {
+.box_container, .First-job p {
 	color: black;
-	font-size: 1.4em;
-	padding-right: 1.8rem;
+	font-size: 1.0em;
+	padding-left: 3rem;
 	line-height: 32px;
 	text-align: justify;
 	word-wrap: break-word;
@@ -889,10 +887,10 @@ h2,h4 {
 	text-align: center;
 }
 
-.Second-job p {
+.box_container .Second-job p {
 	color: black;
 	font-size: 1.4em;
-	padding-left: 0rem;
+	padding-left: 3rem;
 	line-height: 32px;
 	text-align: justify;
 	word-wrap: break-word;
@@ -913,10 +911,10 @@ h2,h4 {
 	text-align: center;
 }
 
-.Third-job p {
+.box_container .Third-job p {
 	color: black;
 	font-size: 1.4em;
-	padding-left: 0rem;
+	padding-left: 3rem;
 	line-height: 32px;
 	text-align: justify;
 	word-wrap: break-word;
@@ -953,7 +951,7 @@ h2,h4 {
 	height: 50px;
 	line-height: 50px;
 	margin: 25px auto;
-	margin-left: 2rem;
+	margin-left: 7rem;
     position: absolute;
 	text-transform: uppercase;	
 	text-align: center;
@@ -1371,13 +1369,11 @@ textarea {
 	padding-left: 2.9em;
 } 	
 	
-	
-	
-/*
 .row,
  article figure img {
-	width: 70%;*/
+	width: 70%;
 }
+	
 .description {
 	color: black;
 	font-style:italic;
@@ -1555,49 +1551,57 @@ textarea {
 .info-on-chefs {
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 }
 	
 .executive-chef img, 
 .station-chef img, 
 .pastry-chef img {
-	padding-left: 83px;
-	width: 75%;	
+	padding-left: 7rem;
+	width: 65%;	
 }
 
-.executive-chef h3 strong,
-.station-chef h3 strong, 
+.executive-chef h3 strong {
+	color: black;
+	font-size: 1.4em;	
+}
+	
+.station-chef h3 strong {
+	color: black;
+	font-size: 1.4rem;	
+	padding-left: 6rem;	
+} 
+	
 .pastry-chef h3 strong {
 	color: black;
-	font-size: 1rem;	
+	font-size: 1.4rem;	
 }
 	
 .executive-chef p {
 	color: black;
-	font-size: 1.4em;
-	margin-left: 1rem;
-	margin-bottom: 55px;
+	font-size: 1.6em;
+	margin-left: 9rem;
+	padding-bottom: 6rem;
 	text-align: justify;
 	word-wrap: break-word;
-	width: 85%;
+	width: 59%;
 }
 	
 .station-chef p {
 	color: black;
-	font-size: 1.4em;
-	margin-left: 2rem;
-	margin-bottom: 55px;
+	font-size: 1.6em;
+	padding-bottom: 12px;
 	text-align: justify;
 	word-wrap: break-word;
-	width: 86%;
+	width: 56%;
 }
 	
 .pastry-chef p {
 	color: black;
-	font-size: 1.4em;
-	margin-left: 3rem;
+	font-size: 1.6em;
 	text-align: justify;
 	word-wrap: break-word;
-	width: 73%;
+	width: 63%;
 }
 
 .info-on-chefs {
@@ -1689,32 +1693,45 @@ textarea {
  Employment Page for Tablet
    ========================================================================== */	
 	
-.box, .box-container .first-job p {
+.box {
 	padding-left: 1rem;	
 }
 
-.box-container, .First-job h3  {
+.First-job h3  {
 	padding-right: 7rem;	
 }
 	
-.box-container, .First-job li{
-	padding-right: 7rem;	
+ .First-job li{
+	padding-right: 5rem;	
 }
+	
+.First-job p{
+	padding-left: 4rem; 
+	padding-right: 3rem;	
+}	
 
-.box-container, .Second-job h3 {
-	padding-right: 7rem;	
-}
-		
-.box-container, .Second-job li {
+.Second-job h3 { 
 	padding-right: 7rem;	
 }
 	
-.box-container, .Third-job h3 {
+.Second-job p {
+	padding-left: 4rem;
+	padding-right: 4rem;	
+}	
+	
+.Second-job li {
+	padding-right: 5rem;	
+}
+	
+.Third-job h3 {
 	padding-right: 7rem;	
 }
+.Third-job p {
+	padding-left: 4rem;
+}	
 
-.box-container, .Third-job li {
-	padding-right: 7rem;	
+.Third-job li {
+	padding-right: 5rem;	
 }
 
 .btn-resume {
@@ -1724,7 +1741,7 @@ textarea {
 	height: 50px;
 	line-height: 50px;
 	margin: 25px auto;
-	margin-left: 7rem;
+	margin-left: 12rem;
 	position: absolute;
 	text-align: center;
 	text-transform: uppercase;
@@ -1787,7 +1804,7 @@ textarea {
 	width: 99%;
 }
 
-.area{
+.area {
 	height: 47rem; 
 }
 
@@ -1893,7 +1910,7 @@ btn-ghost means see throught button: example- second button*/
 	margin-left: 16rem;
 	text-align: center;
 	word-wrap: break-word;
-	width: 51%;
+	width: 61%;
 }
 	
 .entrees_section {
@@ -2128,36 +2145,26 @@ btn-ghost means see throught button: example- second button*/
 	font-size: 1.6em;
 	line-height: 29px;
 	margin-bottom: 0.1em;
-	padding-left: 4rem;
+	padding-left: 9rem;
 }
-/*
-.dishes{
-	display: flex;
-	flex-flow: row wrap;*/
-	/*align-items: center;*/
-	/*align-content: center;*/
 
-/*.dish-wrapper article, figure img{
-	margin-bottom: 45px;
-	width: 70%;*/
-
-.dish-wrapper{
-	display: flex;
-	flex-flow: row wrap;
-}
 .dish-wrapper {
 	display: flex;
 	flex-flow: row wrap;
 }
 	
-.dish-wrapper .row {
-	flex-basis: 18%;
-	padding-left: 8em;
-} 	
+.dish-wrapper {
+	padding-left: 1.2em;
+}
+	
+.row {
+	flex-basis: 500%;
+} 
 	
 .dish-wrapper .row figure img {
-	width: 99%;
+	width: 35%;
 }
+	
 .description {
 	color: black;
     font-size: 1.7em;
@@ -2166,7 +2173,7 @@ btn-ghost means see throught button: example- second button*/
 	padding-left: 1.2rem;
 	text-align: center;
 	word-wrap: break-word;
-	width:150%;	
+	width:80%;	
 }
 	 
 .description_2 {
@@ -2177,7 +2184,7 @@ btn-ghost means see throught button: example- second button*/
 	padding-left: 0.1rem;
 	text-align: center;
 	word-wrap: break-word;
-	width: 150%;
+	width: 70%;
 }
 
 .description_3 {
@@ -2188,7 +2195,7 @@ btn-ghost means see throught button: example- second button*/
 	padding-left: 1rem;
 	text-align: center;
 	word-wrap: break-word;
-	width: 120%;
+	width: 70%;
 }
 	
 .description_4 {
@@ -2206,7 +2213,9 @@ btn-ghost means see throught button: example- second button*/
 	font-style:italic;
     font-size: 1.7em;
 	line-height: 26px;
-	width: 150%;
+	padding-left: 1rem;
+	text-align: center;
+	width: 60%;
 	
 }
 	
@@ -2246,13 +2255,13 @@ btn-ghost means see throught button: example- second button*/
 }	
 
 #top-chef img {
-	width: 85%;
-	margin-left: 0.2rem;
+	width: 70%;
+	padding-left: 6rem;
 }
 	
  #top-chef .biography h1{
 	color: darkorange;
-	font-size: 1.8em;
+	font-size: 1.2em;
 	margin-right: 1.2px;
 	margin-top: 13rem;
 	margin-bottom: 1.0rem;
@@ -2264,52 +2273,52 @@ btn-ghost means see throught button: example- second button*/
 	font-family: 'Cormorant SC', serif;
 	font-size: 1.2em;
 	line-height: 22px;
-	margin-left: 0.3rem;
+	padding-left: 3rem;
 	margin-top: 1.2rem;
 	text-align: justify;
 	word-wrap: break-word;
-	width: 111%;	
+	width: 85%;	
 }
 
 #listings h2{
 	font-size: 2.4em;
 	padding-left: 2rem;
-}	
-#top-chef, .listings p{
-	color: black;
-
-	
 }
+	
+#top-chef .listings p{
+	color: black;
+	font-size: 3rem;	
+}
+	
 .info-on-chefs {
 	display: flex;
-	flex-direction: row;
+	flex-flow: row nowrap;
 	
-}
-	
-.row_3 {
-	display: flex;
 }
 	
 .executive-chef img, 
 .station-chef img,
-.pastry-chef img{
-	width: 58%;
+.pastry-chef img {
+	width: 50%;
 	padding-right: 7rem;
-	padding-left: 7rem;
+	padding-left: 5rem;
 }
 
-.executive-chef img{
+.info_on_chefs .executive-chef img {
+	padding-right: 8em;
 	width: 60%;
 }
 	
 .executive-chef strong h3 {
-	padding-right: 20px;	
+	font-size: 1.2rem;
+	padding-right: 5em;	
 }	
 	
-.executive-chef p {
-	font-size: 1.5em;
+.info_on_chefs, .executive-chef p {
+	font-size: 1.1em;
 	flex-basis: 3px;
-	width: 71%
+	/*padding-left: 2rem;*/
+	/*width: 71%*/
 }
 
 .station-chef img {
@@ -2317,27 +2326,29 @@ btn-ghost means see throught button: example- second button*/
 }	
 	
 .station-chef strong h3 {
-	padding-right: 23px;	
+	padding-right: 5rem;	
 }	
 		
-.station-chef p {
-	font-size: 1.5em;
+.info_on_chefs, .station-chef p {
+	font-size: 1.1em;
 	flex-basis: 3px;
-	width: 71%;
+	width: 51%;
 }
 	
-.pastry-chef img {
-	padding-right: 7rem;	
+.info_on_chefs, .pastry-chef img {
+	padding-right: 15rem;	
 }	
 .pastry-chef strong h3 {
+	font-size: 1.0em;
 	padding-right: 23px;	
 }	
 	
-.pastry-chef p {
-	font-size: 1.5em;
+.info_on_chefs, .pastry-chef p {
+	font-size: 1.1em;
 	flex-basis: 3px;
-	text-align: left;
-	width: 71%;
+	padding-right:3rem;
+	text-align: justify;
+	/*width: 71%;*/
 }	
 	
 	
@@ -2364,20 +2375,21 @@ btn-ghost means see throught button: example- second button*/
    ========================================================================== */	
 	
 	
-.box_2{
+.box_2 {
 	background: white;
 	margin-left:55px;
 	margin-right: 55px;
 	padding-bottom: 8rem;							
 }
 	
-.box_container_2 h1{
+.box_container_2 h1 {
 	font-family: 'Viaoda Libre', cursive;
+	font-size: 3em;
 	padding-top: 54px;
 	text-align: center;
-	font-size: 3em;
 }
-.box_container_2 h2{
+	
+.box_container_2 h2 {
 	font-size: 1.6em;
 	line-height: 23px;
 	margin-left: 41px;
@@ -2387,26 +2399,28 @@ btn-ghost means see throught button: example- second button*/
 	word-wrap: break-word;
 	width: 65%;
 }
-.box_container_2 h4{
+	
+.box_container_2 h4 {
 	color: darkolivegreen;
+	font-family: 'Domine', serif;
+	font-size: 1.5em;
 	line-height: 22px;
 	margin-left: 2rem;
 	word-wrap: break-word;
 	width: 69%;
 	weight: 100;
-	font-family: 'Domine', serif;
-	font-size: 1.5em;
 }
-.box_container_2 p{
+	
+.box_container_2 p {
 	color: darkslategray;
+	font-size: 1.7em;
+	font-family: 'Cormorant SC', serif;
 	line-height: 26px;
 	text-align: left;
 	text-align: justify;
 	margin-left: 3rem;
 	word-wrap: break-word;
 	width: 78%;
-	font-size: 1.7em;
-	  font-family: 'Cormorant SC', serif;
 }
 
 
@@ -2417,26 +2431,49 @@ btn-ghost means see throught button: example- second button*/
    ========================================================================== */	
 	
 
- .First-job .btn-resume, .Second-job .btn-resume,  .Third-job .btn-resume{
-	width: 20%;
-	background: #486255;
-	height: 50px;
-	text-align: center;
-	line-height: 50px;
-	color: #fff;
-	text-transform: uppercase;
-	margin: 25px 0px 0px 12px;
-	cursor: pointer;
-	border-radius: 5px;	
-    position: absolute;
-  	margin-left: 22rem;
+	
+.First-job p {
+	padding-left: 7rem;	
+	word-wrap: break-word;
+	width: 80%;;
 }
- .btn-resume:hover,
-.btn-resume:active{
+	
+.Second-job p {
+	padding-left: 7rem;	
+	word-wrap: break-word;
+	width: 80%;;
+}	
+	
+.Third-job p {
+	padding-left: 7rem;	
+	word-wrap: break-word;
+	width: 80%;;
+}	
+	
+.First-job .btn-resume, 
+.Second-job .btn-resume,  
+.Third-job .btn-resume {
+	background: #486255;
+	border-radius: 5px;	
+	color: #fff;
+	cursor: pointer;
+	height: 50px;
+	line-height: 50px;
+	margin: 25px 0px 0px 12px;
+  	margin-left: 25rem;
+	position: absolute;
+	text-align: center;
+	text-transform: uppercase;
+	width: 20%;
+}
+	
+.btn-resume:hover,
+.btn-resume:active {
     background-color: green;
 	padding-left: 34px;
 }
-hr{
+	
+hr {
 	width: 100%;
 	margin-left: -1px;
 }
