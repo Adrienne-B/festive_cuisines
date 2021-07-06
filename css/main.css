@@ -482,7 +482,7 @@ btn-ghost means see throught button: example- second button*/
 .second_group p {
 	color: dimgrey;
 	font-family: 'Domine', serif;
-	font-size: 18px;
+	font-size: 1.0rem;
 	margin-bottom: 45px;
 	padding-left: 55px;
 	text-align: center;
@@ -561,13 +561,17 @@ btn-ghost means see throught button: example- second button*/
 }
 
 .dish-wrapper article, figure img {
+	padding-left: 3rem;
 	margin-bottom: 45px;
 	width: 70%;
 }
 
-.dish-wrapper .description {
+.dish-wrapper, .description {
 	color: black;
+	font-size: 1.2rem;
+	font-style: italic;
 	font-family: 'Domine', serif;
+	line-height: 1rem;
 	text-align: center;
 	padding-right: 12px;
   /*font-family: 'Cormorant SC', serif;*/
@@ -791,7 +795,7 @@ btn-ghost means see throught button: example- second button*/
 } 
 .type_bar, .area__2 {
 	align-items: center;
-	padding-left: 5.2rem;
+	/*padding-left: 5.2rem;*/
 }
 
 .area_2 {
@@ -1009,20 +1013,19 @@ hr{
 .box_container_2 h4 {
 	color: darkolivegreen;
 	font-family: 'Domine', serif;
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	line-height: 1rem;
 	margin-left: 2rem;
 	word-wrap: break-word;
 	width: 84%;
-	weight: 100;
 }
 
 .box_2 .box_container_2 p {
 	color: darkslategray;
-	font-family: 'Cormorant SC', serif;
+	font-family: 'Domine', serif;
 	font-size: 1.3rem;
 	line-height: 18px;
-	margin-right: 2rem;
+	padding-left: 2rem;
 	text-align: justify;
 	word-wrap: break-word;
 	width: 78%;
@@ -1371,13 +1374,13 @@ textarea {
 	
 .row,
  article figure img {
-	width: 70%;
+	width: 60%;
 }
 	
 .description {
 	color: black;
 	font-style:italic;
-    font-size: 1.7em;
+    font-size: 1.2em;
 	line-height: 26px;
 	padding-left: 0.2rem;
 	text-align: center;
@@ -1386,7 +1389,7 @@ textarea {
 }
 	 
 .description_2 {
-	font-size: 1.7em;
+	font-size: 1.2em;
 	font-style:italic;
 	color: black;
 	line-height: 26px;
@@ -1399,7 +1402,7 @@ textarea {
 .description_3 {
 	color: black;
 	font-style:italic;
-    font-size: 1.7em;
+    font-size: 1.2em;
 	line-height: 26px;
 	padding-left: 3rem;
 	text-align: center;
@@ -1410,7 +1413,7 @@ textarea {
 .description_4 {
 	color: black;
 	font-style:italic;
-	font-size: 1.7em;
+	font-size: 1.2em;
 	line-height: 26px;
 	text-align: center;
 	word-wrap: break-word;
@@ -1420,7 +1423,7 @@ textarea {
 .description_5 {
 	color: black;
 	font-style:italic;
-    font-size: 1.7em;
+    font-size: 1.2em;
 	line-height: 26px;
 	width: 78%;
 	
@@ -1429,7 +1432,7 @@ textarea {
 .description_6 {
 	color: black;
 	font-style:italic;
-    font-size: 1.7em;
+    font-size: 1.2em;
 	line-height: 26px;
 	width: 79%;
 }
@@ -1468,7 +1471,7 @@ textarea {
 	font-family: 'Domine', serif;
 	font-size: 1.5em;
 	line-height: 22px;
-	margin-left: 6rem;
+	padding-left: 3rem;
 	word-wrap: break-word;
 	width: 79%;
 	weight: 100;
@@ -1479,7 +1482,7 @@ textarea {
 	font-size: 1.7em;
 	font-family: 'Cormorant SC', serif;
 	line-height: 26px;
-	margin-left: 2rem;
+	margin-left: 3rem;
 	text-align: left;
 	text-align: justify;
 	word-wrap: break-word;
@@ -2153,21 +2156,22 @@ btn-ghost means see throught button: example- second button*/
 	flex-flow: row wrap;
 }
 	
-.dish-wrapper {
-	padding-left: 1.2em;
+.dish-wrapper .row {
+	flex-basis: 25%;
+	
 }
 	
 .row {
-	flex-basis: 500%;
+	flex-basis: 50%;
 } 
 	
 .dish-wrapper .row figure img {
-	width: 35%;
+	width: 65%;
 }
 	
 .description {
 	color: black;
-    font-size: 1.7em;
+    font-size: 1.2em;
 	font-style:italic;
 	line-height: 26px;
 	padding-left: 1.2rem;
@@ -2177,7 +2181,7 @@ btn-ghost means see throught button: example- second button*/
 }
 	 
 .description_2 {
-	font-size: 1.7em;
+	font-size: 1.2em;
 	font-style:italic;
 	color: black;
 	line-height: 26px;
@@ -2189,7 +2193,7 @@ btn-ghost means see throught button: example- second button*/
 
 .description_3 {
 	color: black;
-    font-size: 1.7em;
+    font-size: 1.2em;
 	font-style:italic;
 	line-height: 26px;
 	padding-left: 1rem;
@@ -2200,33 +2204,36 @@ btn-ghost means see throught button: example- second button*/
 	
 .description_4 {
 	color: black;
-	font-size: 1.7em;
+	font-size: 1.2em;
 	font-style:italic;
 	line-height: 26px;
 	text-align: center;
 	word-wrap: break-word;
-	width: 150%;
+	width: 110%;
 }
 	
 .description_5 {
 	color: black;
 	font-style:italic;
-    font-size: 1.7em;
+    font-size: 1.2em;
 	line-height: 26px;
 	padding-left: 1rem;
 	text-align: center;
-	width: 60%;
+	width: 67%;
 	
 }
 	
 .description_6 {
 	color: black;
 	font-style:italic;
-    font-size: 1.7em;
+    font-size: 1.2em;
 	line-height: 26px;
 	width: 80%;
 }
-	
+
+.price {
+	font-size: 1.3rem;	
+}	
 	
 /* ==========================================================================
   About Page for Desktop
@@ -2416,9 +2423,8 @@ btn-ghost means see throught button: example- second button*/
 	font-size: 1.7em;
 	font-family: 'Cormorant SC', serif;
 	line-height: 26px;
-	text-align: left;
 	text-align: justify;
-	margin-left: 3rem;
+	padding-left: 5rem;
 	word-wrap: break-word;
 	width: 78%;
 }
@@ -2502,8 +2508,8 @@ hr {
 .border-wrapper{
 	background: white;
 	padding-bottom: 88px;
-	margin-left: 7rem;
-	margin-right: 7rem;
+	margin-left: 8rem;
+	margin-right: 8rem;
 	margin-top: 5rem;
 }
 .border h2 {
