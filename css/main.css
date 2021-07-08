@@ -108,7 +108,7 @@ body {
 html, body {
   margin:0;
   padding:0;
-  overflow-x:hidden;	
+ /* overflow-x:hidden;*/
 	/*prevents white space from the right side*/
 }
 ul, 
@@ -257,13 +257,19 @@ footer .social-icons p i {
   font-size: 1.3125em;
 	
 }
+
 footer .copyright {
   margin: 20px 0;
 }
 
 header li:hover,
 header li:active{
-    background-color: #527158;
+    background-color: darkorange; /*#527158;*/
+}
+
+footer .social-icons i:hover,
+footer .social-icons i:active{
+    transform:scale(1.9);	
 }
 
 
@@ -285,10 +291,13 @@ header li:active{
 }
 
 .overlay h1 {
+	align-items: center;
 	color: white;
+	display: flex;
 	font-family: 'DM Serif Display', serif;
 	font-size: 2rem;
-	padding-left: 0.2em;
+	justify-content: center;
+	/*padding-left: 0.2em;*/
 	margin-top: 7rem;
 	text-align: center;
 }
@@ -345,7 +354,7 @@ btn-ghost means see throught button: example- second button*/
 	font-style: italic;
 	font-size: 1.3em;
 	line-height: 1.2em;
-	margin-left: 45px;
+	/*margin-left: 45px;*/
 	min-height: 15rem;
 	text-align: center;
 	word-wrap: break-word;
@@ -375,7 +384,6 @@ btn-ghost means see throught button: example- second button*/
 	text-align: center;
 	width: 90%;
   	margin: 30px 20px;
-	
 }
 
 .container-wrapper p {
@@ -395,7 +403,7 @@ btn-ghost means see throught button: example- second button*/
 	/*text-decoration: underline;*/
 }
 
-.first_group article p{
+.first_group article p {
 	color: dimgrey;
 	font-family: 'Domine', serif;
 	margin-bottom: 45px;
@@ -403,7 +411,14 @@ btn-ghost means see throught button: example- second button*/
 	text-align: center;
 	word-wrap: break-word;
 	width: 89%;
+}
 
+.first_group #breakfast figure img {
+	height: 15rem;
+}
+
+.first_group #steak figure img {
+	height: 15rem;
 }
 
 
@@ -411,7 +426,7 @@ btn-ghost means see throught button: example- second button*/
 
 
 .appetizer {
-	background-image: url("img/appetizer.png");
+	background-image: url("./img/appetizer.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	min-height: 18em;
@@ -460,7 +475,6 @@ btn-ghost means see throught button: example- second button*/
 
 #dessert-divider p {
 	color: black;
-	font-size: 1.2em;
 	font-style: italic;
 	font-size: 1.2rem;
 	line-height: 1.4rem;
@@ -496,15 +510,23 @@ btn-ghost means see throught button: example- second button*/
 	width: 87%;
 }
 
-#cake p{
+.second_group, #brownie p {
 	font-family: 'Domine', serif;
-	font-size: 18px;
+	font-size: 1.0em;
 	padding-left: 45px;
 	word-wrap: break-word; 
 	width: 82%;
 }
 
+.second_group #cake p{
+	font-family: 'Domine', serif;
+	font-size: 1.0em;
+}
 
+.second_group #musse p{
+	font-family: 'Domine', serif;
+	font-size: 1.0em;
+}
 
 
 /* ==========================================================================
@@ -572,6 +594,11 @@ btn-ghost means see throught button: example- second button*/
 	width: 70%;
 }
 
+.dish-wrapper .row, article figure img:hover,
+.dish-wrapper .row, article figure img:active{
+    transform:scale(1.2);	
+}
+
 .dish-wrapper, .description {
 	color: black;
 	font-size: 1.2rem;
@@ -600,28 +627,40 @@ btn-ghost means see throught button: example- second button*/
 
 .description {
 	color: black;
-    font-size: 1.2em;
+    font-size: 0.9em;
+	text-align: center;
+	line-height: 1.2rem;
 	word-wrap: break-word;
 	width: 65%;
-	text-align: center;
-	line-height: 16px;
 }
 
-.description_3 {	
+.description_3 {
+	font-size: 0.9em;
+	line-height: 1.2rem;
 	padding-right: 7rem;
+	text-align: center;
 }
 
 
 .description_4 {
+	font-size: 0.9em;
+	line-height: 1.2rem;
 	padding-right: 2rem;
+	text-align: center;
 }
 
 .description_5 {
+	font-size: 0.9em;
+	line-height: 1.2rem;
 	padding-left: 2rem;
+	text-align: center;
 }
 
 .description_6 {
+	font-size: 0.9em;
+	line-height: 1.2rem;
 	padding-left: 4rem;
+	text-align: center;
 }
 
 .price {
@@ -963,7 +1002,7 @@ h2,h4 {
 	height: 50px;
 	line-height: 50px;
 	margin: 25px auto;
-	margin-left: 7rem;
+	margin-left: 4rem;
     position: absolute;
 	text-transform: uppercase;	
 	text-align: center;
@@ -1325,7 +1364,8 @@ textarea {
 	width: 85%;
 }
 	
-#brownie, #cake, #musse p {
+#brownie p, #cake p, #musse p {
+		font-size: 1.2em;
 		font-family: 'Domine', serif;
 }	
 
@@ -1426,7 +1466,7 @@ textarea {
 	
 .description_6 {
 	color: black;
-	font-style:italic;f
+	font-style:italic;
     font-size: 1.2em;
 	line-height: 26px;
 	width: 79%;
@@ -1740,7 +1780,7 @@ textarea {
 	height: 50px;
 	line-height: 50px;
 	margin: 25px auto;
-	margin-left: 12rem;
+	margin-left: 8rem;
 	position: absolute;
 	text-align: center;
 	text-transform: uppercase;
@@ -1962,6 +2002,14 @@ btn-ghost means see throught button: example- second button*/
 	width: 25%;
 }
 	
+.first_group #breakfast figure img {
+	height: 15rem;
+}
+
+.first_group #steak figure img {
+	height: 15rem;
+}	
+	
 .first_group article h3 {
 	color:  black;
 	font-family: 'Viaoda Libre', cursive;
@@ -2079,7 +2127,7 @@ btn-ghost means see throught button: example- second button*/
 	
 .row_2 figure {
 	width: 55%;
-	margin-left: 63px;
+	margin-left: 2px;
 }
 	
 .second_group #brownie img {
@@ -2094,27 +2142,34 @@ btn-ghost means see throught button: example- second button*/
 }
 
 .second_group #cake img {
-	padding-right: 2.0rem;
-	width: 125%;
+	width: 118%;
 }
 
-#cake p {
-	font-size: 1.0rem;
-	text-align: justify;
-	width: 110%;
-	word-wrap: break-word;
-}
 
 .second_group #musse img {
 	width: 100%;
 }
 
-#musse p {
-	padding-left: 34px;
+.row_2 #brownie p {
+	font-size: 1.0rem;
+	text-align: justify;
+	word-wrap: break-word;
+	width: 92%;	
+}	
+	
+.row_2 #cake p {
+	font-size: 1.0rem;
+	text-align: justify;
+	word-wrap: break-word;
+	width: 92%;	
+}
+	
+.row_2 #musse p {
+	/*padding-left: 15rem;*/
     font-size: 1.0rem;
 	text-align: justify;
 	word-wrap: break-word;
-	width: 50%;
+	width: 62%;
 }	
 	
 
@@ -2169,20 +2224,20 @@ btn-ghost means see throught button: example- second button*/
 	
 .description {
 	color: black;
-    font-size: 1.2em;
+    font-size: 0.9em;
 	font-style:italic;
-	line-height: 26px;
+	line-height: 1em;
 	padding-left: 1.2rem;
 	text-align: center;
 	word-wrap: break-word;
-	width:80%;	
+	width:59%;	
 }
 	 
 .description_2 {
-	font-size: 1.2em;
+	font-size: 0.9em;
 	font-style:italic;
 	color: black;
-	line-height: 26px;
+	line-height: 1.2rem;
 	padding-left: 0.1rem;
 	text-align: center;
 	word-wrap: break-word;
@@ -2191,9 +2246,9 @@ btn-ghost means see throught button: example- second button*/
 
 .description_3 {
 	color: black;
-    font-size: 1.2em;
+    font-size: 0.9em;
 	font-style:italic;
-	line-height: 26px;
+	line-height: 1.2rem;
 	padding-left: 1rem;
 	text-align: center;
 	word-wrap: break-word;
@@ -2202,30 +2257,30 @@ btn-ghost means see throught button: example- second button*/
 	
 .description_4 {
 	color: black;
-	font-size: 1.2em;
+	font-size: 0.9em;
 	font-style:italic;
-	line-height: 26px;
+	line-height: 1.2rem;
 	text-align: center;
 	word-wrap: break-word;
-	width: 110%;
+	width: 70%;
 }
 	
 .description_5 {
 	color: black;
 	font-style:italic;
-    font-size: 1.2em;
-	line-height: 26px;
+    font-size: 0.9em;
+	line-height: 1.2rem;
 	padding-left: 1rem;
 	text-align: center;
-	width: 67%;
+	width: 63%;
 	
 }
 	
 .description_6 {
 	color: black;
 	font-style:italic;
-    font-size: 1.2em;
-	line-height: 26px;
+    font-size: 0.9em;
+	line-height: 1.2rem;
 	width: 80%;
 }
 
@@ -2444,6 +2499,25 @@ btn-ghost means see throught button: example- second button*/
 	
 
 	
+.First-job h2 h4, 
+.Second-job h2 h4,  
+.Third-job h2 h4 {
+	padding-left: 4rem;	
+}
+
+.First-job h3, 
+.Second-job h3,  
+.Third-job h3 {	
+	padding-left: 14rem;
+}	
+	
+.First-job li, 
+.Second-job li,  
+.Third-job li {	
+	padding-left: 14rem;
+}
+	
+	
 .First-job p {
 	padding-left: 7rem;	
 	word-wrap: break-word;
@@ -2453,14 +2527,15 @@ btn-ghost means see throught button: example- second button*/
 .Second-job p {
 	padding-left: 7rem;	
 	word-wrap: break-word;
-	width: 80%;;
+	width: 80%;
 }	
 	
 .Third-job p {
 	padding-left: 7rem;	
 	word-wrap: break-word;
 	width: 80%;;
-}	
+}
+		
 	
 .First-job .btn-resume, 
 .Second-job .btn-resume,  
@@ -2478,7 +2553,7 @@ btn-ghost means see throught button: example- second button*/
 	text-transform: uppercase;
 	width: 20%;
 }
-	
+		
 .btn-resume:hover,
 .btn-resume:active {
     background-color: green;
@@ -2580,6 +2655,76 @@ textarea {
 }
 
 
+
+	
+
+	
+/* =========================================================================FFOOTER FOR ALL PAGES REGARDING DESKTOP
+   ========================================================================== */
+	header, span{
+	font-size: 26px;
+	padding-left: 3px;
+	
+}
+nav{
+	/*float: right;*/
+	padding: 46px 10px;
+}
+header nav ul {
+	margin: 0;
+	padding: 0;
+}
+header nav ul li {
+	/* font-family: 'Cormorant SC', serif; */	
+ 	
+    font-family: 'Domine', serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+	padding: 15px 18px;
+	display: inline;
+}	
+	
+	
+	
+  /* FOOTER */
+ footer .content-wrapper {
+    width: 65%;
+    margin: 100px 0;
+  }
+
+  footer .footer-content {
+    display: flex;
+	flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+	width: 100%;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+ }
+
+ footer p {
+      line-height: 1.285;
+}	
+footer .social-icons {
+	display: flex;
+	width: 12.5em;
+	justify-content: space-between;
+ }
+  
+ footer .copyright {
+    width: 100%;
+ }
+	
+	
+	
 	
 	
 	
