@@ -277,6 +277,86 @@ footer .social-icons i:active{
 
 
 
+
+	box-sizing:	border-box;
+	margin: 0;
+	padding: 0;
+}
+nav {
+	background: black;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+}
+nav .mainMenu {
+	display: flex;
+	list-style: none;
+}
+
+nav .mainMenu li a {
+	display: inline-block;
+	padding: 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	font-size: 1.5rem;
+}
+
+nav .mainMenu li a:hover {
+	background: rgba(255, 94,0);
+}
+
+nav .openMenu {
+	font-size: 0.2rem;
+	margin: 20px;
+	display: none;
+	cursor: pointer;
+}
+
+nav .mainMenu .closeMenu {
+	font-size: 2rem;
+	display: none;
+	cursor: pointer;
+}
+
+	nav .mainMenu {
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 10;
+		flex-direction: column;
+		align-items:center;
+		background: black;
+		display: none;
+	}
+
+	nav .mainMenu .closeMenu {
+		display: block;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
+
+	nav .openMenu {
+		display: block;
+	}
+
+    nav .mainMenu li a:hover {
+		background: none;
+		color: darkorange;
+		font-size: 1.6rem;
+	}	
+
+
+
+
+
+
+
+
+
 .hero-area .container {
 	background-image: url("img/cover.png");
 	background-repeat: no-repeat;
@@ -901,7 +981,7 @@ btn-ghost means see throught button: example- second button*/
 	font-size: 1.9em;
 	margin-top: 40px;
 	padding: 12px auto 24px;
-	weight: 100;
+	font-weight: 100;
 }
 
 h2,h4 {
@@ -1260,6 +1340,41 @@ textarea {
 @media only screen and (min-width:768px) {
   /*Tablet styles here*/	
 
+	nav .mainMenu {
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 10;
+		flex-direction: column;
+		align-items:center;
+		background: black;
+		display: none;
+	}
+
+	nav .mainMenu .closeMenu {
+		display: block;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
+
+	nav .openMenu {
+		display: block;
+	}
+
+    nav .mainMenu li a:hover {
+		background: none;
+		color: darkorange;
+		font-size: 1.6rem;
+	}	
+
+
+
+
+
+
 .container h1 {
 	font-size: 2.7em;	
 }	
@@ -1509,7 +1624,7 @@ textarea {
 	padding-left: 3rem;
 	word-wrap: break-word;
 	width: 79%;
-	weight: 100;
+	font-weight: 100;
 }
 	
 .box_container_2 p {
@@ -2476,7 +2591,7 @@ btn-ghost means see throught button: example- second button*/
 	margin-left: 2rem;
 	word-wrap: break-word;
 	width: 69%;
-	weight: 100;
+	font-weight: 100;
 }
 	
 .box_container_2 p {
@@ -2659,21 +2774,23 @@ textarea {
 	
 
 	
-/* =========================================================================FFOOTER FOR ALL PAGES REGARDING DESKTOP
+/* =========================================================================FOOTER FOR ALL PAGES REGARDING DESKTOP
    ========================================================================== */
 	header, span{
 	font-size: 26px;
 	padding-left: 3px;
-	
 }
-nav{
+
+nav {
 	/*float: right;*/
 	padding: 46px 10px;
 }
+
 header nav ul {
 	margin: 0;
 	padding: 0;
 }
+
 header nav ul li {
 	/* font-family: 'Cormorant SC', serif; */	
  	
@@ -2810,4 +2927,4 @@ footer .social-icons {
     page-break-after: avoid;
   }
 }
-
+}
