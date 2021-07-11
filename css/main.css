@@ -209,6 +209,7 @@ header nav ul {
 }
 
 header nav ul li {
+	display: none;  /******** made the cellular and tablet nav disappear***/
   font-size: 1.125em;
 }
 
@@ -276,78 +277,6 @@ footer .social-icons i:active{
 				/* -------------------- Mobile Styles - Homepage -------------------- */ 
 
 
-
-
-	box-sizing:	border-box;
-	margin: 0;
-	padding: 0;
-}
-nav {
-	background: black;
-	color: white;
-	display: flex;
-	justify-content: space-between;
-}
-nav .mainMenu {
-	display: flex;
-	list-style: none;
-}
-
-nav .mainMenu li a {
-	display: inline-block;
-	padding: 15px;
-	text-decoration: none;
-	text-transform: uppercase;
-	color: white;
-	font-size: 1.5rem;
-}
-
-nav .mainMenu li a:hover {
-	background: rgba(255, 94,0);
-}
-
-nav .openMenu {
-	font-size: 0.2rem;
-	margin: 20px;
-	display: none;
-	cursor: pointer;
-}
-
-nav .mainMenu .closeMenu {
-	font-size: 2rem;
-	display: none;
-	cursor: pointer;
-}
-
-	nav .mainMenu {
-		height: 100vh;
-		position: fixed;
-		top: 0;
-		right: 0;
-		left: 0;
-		z-index: 10;
-		flex-direction: column;
-		align-items:center;
-		background: black;
-		display: none;
-	}
-
-	nav .mainMenu .closeMenu {
-		display: block;
-		position: absolute;
-		top: 20px;
-		right: 20px;
-	}
-
-	nav .openMenu {
-		display: block;
-	}
-
-    nav .mainMenu li a:hover {
-		background: none;
-		color: darkorange;
-		font-size: 1.6rem;
-	}	
 
 
 
@@ -1340,38 +1269,6 @@ textarea {
 @media only screen and (min-width:768px) {
   /*Tablet styles here*/	
 
-	nav .mainMenu {
-		height: 100vh;
-		position: fixed;
-		top: 0;
-		right: 0;
-		left: 0;
-		z-index: 10;
-		flex-direction: column;
-		align-items:center;
-		background: black;
-		display: none;
-	}
-
-	nav .mainMenu .closeMenu {
-		display: block;
-		position: absolute;
-		top: 20px;
-		right: 20px;
-	}
-
-	nav .openMenu {
-		display: block;
-	}
-
-    nav .mainMenu li a:hover {
-		background: none;
-		color: darkorange;
-		font-size: 1.6rem;
-	}	
-
-
-
 
 
 
@@ -1402,12 +1299,26 @@ textarea {
 	
 .first_group, .row_1 h3 {
 	font-size: 1.5em;	
+}
+	
+.first_group img {
+	margin-left: 6rem;	
 }	
+
+.first_group .row_1 #breakfast img {
+	height: 34rem;
+	margin-left: 6rem;	
+}
 	
 .first_group p {
 	font-size: 1.00em;
 	padding-left: 1rem;
 }
+	
+.first_group .row_1 #steak img {
+	height: 34rem;
+	margin-left: 6rem;	
+}	
 
 .appetizer {
 	background-image: url("img/appetizer.png");
@@ -2113,16 +2024,22 @@ btn-ghost means see throught button: example- second button*/
 }
 	
 .row_1 {
-	margin-left: 5rem;
+	margin-left: 4rem;
 	width: 25%;
 }
 	
-.first_group #breakfast figure img {
+.first_group .row_1 #breakfast figure img {
 	height: 15rem;
+	margin-left: 2rem;
 }
 
-.first_group #steak figure img {
+.first_group #chicken figure img {
 	height: 15rem;
+}		
+
+.first_group .row_1 #steak figure img {
+	height: 15rem;
+	margin-left: 2rem;
 }	
 	
 .first_group article h3 {
@@ -2213,7 +2130,7 @@ btn-ghost means see throught button: example- second button*/
 	font-style: italic;
 	font-size: 1.4em;
 	margin-top: 30px;
-	margin-left: 3rem;
+	margin-left: 7rem;
 	padding-top: 2rem;
 	text-align: center;
 	width: 90%;
@@ -2223,7 +2140,7 @@ btn-ghost means see throught button: example- second button*/
 	color: black;
 	font-size: 1.2em;
 	font-style: italic;
-	margin-left: 16rem;
+	margin-left: 26rem;
 	margin-top: 13px;
 	padding-bottom: 13px;
 	text-align: center;
@@ -2237,54 +2154,69 @@ btn-ghost means see throught button: example- second button*/
 
 	
 .second_group {
-  display: flex;	
+  	display: flex;	
+	padding-left: 7rem;
+}
+
+.row_2 {
+	margin-left: 7rem;
+	margin-left: 4rem;
+	width: 25%;
 }
 	
+/*	
 .row_2 figure {
 	width: 55%;
 	margin-left: 2px;
+}*/
+	
+.second_group .row_2 #brownie figure img {
+	height: 12.3rem;
+	margin-left: -8rem;
+	width: 99%;
 }
 	
-.second_group #brownie img {
+.second_group .row_2 #brownie h3{
 	width: 119%;
-}
+	margin-left: -5rem;
+}	
 
-.second_group #brownie p {
+.second_group .row_2 #brownie p {
 	font-size: 1.0rem;
+	margin-left: -6rem;
 	text-align: justify;
 	word-wrap: break-word;
-	width: 80%;
-}
-
-.second_group #cake img {
-	width: 118%;
-}
-
-
-.second_group #musse img {
 	width: 100%;
 }
 
-.row_2 #brownie p {
-	font-size: 1.0rem;
-	text-align: justify;
-	word-wrap: break-word;
-	width: 92%;	
-}	
-	
-.row_2 #cake p {
-	font-size: 1.0rem;
-	text-align: justify;
-	word-wrap: break-word;
-	width: 92%;	
+.second_group #cake figure img {
+	height: 12.3rem;
+	margin-right: 3rem;
+	margin-left: -5rem;
+	width: 105%;
 }
+
+.second_group #cake p {
+	font-size: 1.0rem;
+	margin-left: 1rem;
+	text-align: justify;
+	word-wrap: break-word;
+	width: 80%;
+}	
+
+.second_group #musse img {
+	height: 12.3rem;
+	width: 100%;
+}
+
 	
 .row_2 #musse p {
 	/*padding-left: 15rem;*/
     font-size: 1.0rem;
+	margin-left: 3rem;
 	text-align: justify;
 	word-wrap: break-word;
-	width: 62%;
+	width: 92%;
 }	
 	
 
@@ -2776,6 +2708,13 @@ textarea {
 	
 /* =========================================================================FOOTER FOR ALL PAGES REGARDING DESKTOP
    ========================================================================== */
+	
+	#menu-bar{
+		display: none;
+	}
+	
+	
+	
 	header, span{
 	font-size: 26px;
 	padding-left: 3px;
