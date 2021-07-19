@@ -1917,6 +1917,10 @@ textarea {
 .hero-area {
 	display: flex;
 }
+	
+.hero-area .container #two_button {
+		margin-left: 22rem;
+}	
 .container .btn-full, .btn-ghost {
 	justify-content: center;
 	margin-left: 9rem;
