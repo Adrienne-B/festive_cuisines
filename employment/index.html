@@ -23,15 +23,17 @@
 
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../hamburger/css/main.css">
+
+   <!-- css stylesheets -->
 
   <meta name="theme-color" content="#fafafa">
 	
 	
-	<!-- FontAwesome CDN version 5.5 -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">	
-	
 
-	
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">	
+ <!-- FontAwesome CDN version 5.5 -->
+		
 	
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>	
@@ -44,6 +46,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&family=Viaoda+Libre&display=swap" rel="stylesheet">
 
+	
 <title>Festive Cuisines | Employment</title>
 </head>	
 	
@@ -64,14 +67,35 @@
 					
 					<li><a href="about/index.html" target="_blank">ABOUT</a></li>
 					
+					<li><a href="#" target="_blank">EMPLOYMENT</a</li>
+					
 					<li><a href="contact/index.html" target="_blank">CONTACT</a></li>
-					
-					<li><a href="#" target="_blank">EMPLOYMENT</a></li>
-					
-					
-				
 				</ul>
 			</nav>
+			
+				
+		<div id="menu-bar">
+				<div id="menu" onclick="onClickMenu()">
+					<div id="bar1" class="bar"></div>
+					<div id="bar2" class="bar"></div>
+					<div id="bar3" class="bar"></div>
+				</div>
+
+				<ul class="nav" id="nav">
+					<li><a href="../index.html">Home</a></li>
+					
+					<li><a href="../about/index.html" target="_blank">About</a></li>
+					
+					<li><a href="#" target="_blank">Employment</a></li>
+					
+					<li><a href="../faq/index.html" target="_blank">Faq</a></li>
+					
+					<li><a href="../contact/index.html" target="_blank">Contact</a></li>
+				</ul>
+			</div>
+			
+			<div class="menu-bg" id="menu-bg"></div>
+			
 		</div>
 	</header>
 	
@@ -253,6 +277,8 @@
   <script src="../js/plugins.js"></script>
   <script src="../js/main.js"></script>
 
+   <script src= "../hamburger/js/javascript.js">
+	   
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;

@@ -49,8 +49,9 @@ body {
 }
 
 .nav {
-	/*display: none;  /***if you take it off then it will show listing**/
-	padding: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	display: none;
+	padding: 0 11.2rem;;
 	margin: 0 20px;
 	transition: 0.3s ease;
 }
@@ -89,7 +90,7 @@ body {
 }
 
 .change #bar3{
-	transform: translateY(-6px) rotate(45deg);
+	transform: translateY(-8px) rotate(45deg);
 }
 
 .change #bar2 {
@@ -144,7 +145,7 @@ body {
       opacity: 0;
       transition: opacity 300ms;
     }
-  }
+  
   span,
   span:after,
   span:before {

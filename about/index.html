@@ -23,6 +23,7 @@
 
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../hamburger/css/main.css">
 
   <meta name="theme-color" content="#fafafa">
 	
@@ -65,15 +66,36 @@
 					<li><a href="#" target="_blank">ABOUT</a></li>
 					<!--When you are on the same page of the link just put # you dont need to update.-->
 					
-					<li><a href="../contact/index.html" target="_blank">CONTACT</a></li>
 					
 						<li><a href="../faq/index.html" target="_blank">FAQ</a></li>
 					
 					<li><a href="../employment/index.html" target="_blank">EMPLOYMENT</a></li>
 					
-				
+					<li><a href="../contact/index.html" target="_blank">CONTACT</a></li>
 				</ul>
 			</nav>
+			
+					<div id="menu-bar">
+				<div id="menu" onclick="onClickMenu()">
+					<div id="bar1" class="bar"></div>
+					<div id="bar2" class="bar"></div>
+					<div id="bar3" class="bar"></div>
+				</div>
+
+				<ul class="nav" id="nav">
+					<li><a href="../index.html">Home</a></li>
+					
+					<li><a href="#" target="_blank">About</a></li>
+					
+					<li><a href="../employment/index.html" target="_blank">Employment</a></li>
+					
+					<li><a href="../faq/index.html" target="_blank">Faq</a></li>
+					
+					<li><a href="../contact/index.html" target="_blank">Contact</a></li>
+				</ul>
+			</div>
+			
+			<div class="menu-bg" id="menu-bg"></div>
 		</div>
 	</header>
 	
@@ -247,6 +269,7 @@
   <script src="../js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="../js/plugins.js"></script>
   <script src="../js/main.js"></script>
+	 <script src= "../hamburger/js/javascript.js">
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
