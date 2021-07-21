@@ -213,6 +213,7 @@ header nav ul li {
   font-size: 1.125em;
 }
 
+
 footer {
   flex-direction: column;	
   text-align: center;
@@ -2719,38 +2720,6 @@ textarea {
 	
 /* =========================================================================FOOTER FOR ALL PAGES REGARDING DESKTOP
    ========================================================================== */
-	
-	#menu-bar{
-		display: none;
-	}
-	
-	
-	
-	header, span{
-	font-size: 26px;
-	padding-left: 3px;
-}
-
-nav {
-	/*float: right;*/
-	padding: 46px 10px;
-}
-
-header nav ul {
-	margin: 0;
-	padding: 0;
-}
-
-header nav ul li {
-	/* font-family: 'Cormorant SC', serif; */	
- 	
-    font-family: 'Domine', serif;
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: 16px;
-	padding: 15px 18px;
-	display: inline;
-}	
 	
 	
 	
