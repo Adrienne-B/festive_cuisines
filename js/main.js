@@ -16,5 +16,8 @@ function close() {
     mainMenu.style.top ='-100%';
 }
 
+//contact footer
+const footer = document.querySelector(' .openMenu');
+
 
 

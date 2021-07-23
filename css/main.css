@@ -279,6 +279,34 @@ footer .social-icons i:active{
 
 
 
+nav li{
+		display: none;
+	/* put nav link that is for desktop as none so that the regular nav wont show in mobile. Hamburger should only appear*/
+}
+
+
+
+#menu-bar{
+	background-color: black;
+	height: 7rem;
+	margin-left: -1rem;
+	padding-bottom: 1.3rem;
+	width: 107%;
+}	
+	
+#nav {
+	padding-left: 14rem;
+	padding-bottom: 2rem;
+}	
+	
+ #nav li {
+	 font-size: 1.8rem;
+	margin-right: -55rem;
+	 padding-top: 4rem;
+}
+		
+
+
 
 
 
@@ -648,8 +676,14 @@ btn-ghost means see throught button: example- second button*/
     font-size: 0.9em;
 	text-align: center;
 	line-height: 1.2rem;
+	padding-left: 3.7rem;
 	word-wrap: break-word;
 	width: 65%;
+}
+
+.description, .price p {
+	margin-bottom: 6rem;
+	margin-right: 8rem;
 }
 
 .description_3 {
@@ -1277,7 +1311,25 @@ textarea {
 @media only screen and (min-width:768px) {
   /*Tablet styles here*/	
 
-
+	
+#menu-bar{
+	background-color: black;
+	height: 7rem;
+	margin-left: -2rem;
+	padding-bottom: 1.3rem;
+	width: 107%;
+}	
+	
+#nav {
+	padding-left: 24rem;
+	padding-bottom: 5.2rem;
+}	
+	
+ #nav li {
+	 font-size: 1.8rem;
+	padding-right: -53rem;
+	 padding-top: 4rem;
+}
 
 
 .container h1 {
@@ -1444,6 +1496,10 @@ textarea {
 .row,
  article figure img {
 	width: 60%;
+}
+	
+.dishes {
+	margin-left: 7rem;	
 }
 	
 .description {
@@ -1912,6 +1968,41 @@ textarea {
 
 
 @media only screen and (min-width:1200px) {
+	
+	
+	
+	
+#menu-bar{
+		display: none;
+	/* put hamburger nav link that is for mobile and tablet as none so that it wont show in  desktop nav*/
+}
+	
+header, span{
+	font-size: 26px;
+	padding-left: 3px;
+}
+
+header nav {
+	/*float: right;*/
+	padding: 46px 10px;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+}
+	
+	
+	header nav ul li {
+	/* font-family: 'Cormorant SC', serif; */	
+    font-family: 'Domine', serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+	padding: 15px 18px;
+	display: inline;
+}	
+	
 	
 .overlay h1{
 	color: white;

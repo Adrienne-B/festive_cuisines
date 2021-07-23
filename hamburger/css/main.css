@@ -12,7 +12,7 @@ body {
 #menu {
 	cursor: pointer;
 	height: 30px;
-	margin: 30px 0 20px 20px;
+	margin: 30px 0 20px 34px;
 	width: 35px;
 }
 
@@ -111,7 +111,7 @@ body {
 
 
 
-
+/*
 
 .main-head__nav {
   position: relative;
@@ -126,7 +126,6 @@ body {
   right: 10em;
   width: 4.4em;
   height: 4.4em;
-  div {
     position: absolute;
     top: 30%;
     left: -4em;
